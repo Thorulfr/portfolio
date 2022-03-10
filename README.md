@@ -1,4 +1,4 @@
-# Thorulfr.github.io
+# Benjamin Holt – Portfolio
 
 ## Description
 
