@@ -30,14 +30,14 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 <div className="flex justify-center items-center pl-2 text-2xl h-10 ">
                     {localStorage.theme === 'light' ? (
                         <img
-                            src="../assets/images/logo.svg"
+                            src="./assets/images/logo.svg"
                             alt="Benjamin Holt monogram"
                             className="h-full z-20"
                             id="logo-image-mobile"
                         />
                     ) : (
                         <img
-                            src="../assets/images/logo.svg"
+                            src="./assets/images/logo.svg"
                             alt="Benjamin Holt monogram"
                             className="h-full z-20"
                             id="logo-image-mobile"

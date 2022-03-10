@@ -5,7 +5,7 @@ const AboutMe = () => {
     return (
         <main className="flex flex-col my-6 text-theme-purple sm:items-center sm:justify-center 2xl:text-lg">
             <img
-                src="../assets/images/self-portrait.jpg"
+                src="./assets/images/self-portrait.jpg"
                 alt="Benjamin in a lava field in northern Iceland"
                 className="mb-6 mx-12 rounded-bl-2xl rounded-tr-2xl sm:w-2/3 md:w-1/2 lg:w-1/3"
             ></img>
