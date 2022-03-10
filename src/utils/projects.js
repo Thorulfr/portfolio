@@ -11,7 +11,7 @@ const budgetTracker = new Project(
     'PWA with offline functionality',
     'https://github.com/Thorulfr/traveling-budget-tracker',
     'https://pure-refuge-57011.herokuapp.com/',
-    './assets/screenshots/budget-tracker-screenshot.png'
+    '../assets/screenshots/budget-tracker-screenshot.png'
 );
 
 const numberOneFan = new Project(
@@ -19,7 +19,7 @@ const numberOneFan = new Project(
     'Full-stack music app',
     'https://github.com/Thorulfr/no1fan',
     'https://no1fan.herokuapp.com/',
-    './assets/screenshots/no-1-fan-screenshot.png'
+    '../assets/screenshots/no-1-fan-screenshot.png'
 );
 
 const socialNetworkAPI = new Project(
@@ -27,7 +27,7 @@ const socialNetworkAPI = new Project(
     'Back-end for a sample social network',
     'https://github.com/Thorulfr/social-network-api',
     'https://www.youtube.com/watch?v=MOfmfsOLSZk',
-    './assets/screenshots/social-network-api-screenshot.png'
+    '../assets/screenshots/social-network-api-screenshot.png'
 );
 
 const streamability = new Project(
@@ -35,7 +35,7 @@ const streamability = new Project(
     'Full-stack streaming amalgamator',
     'https://github.com/Thorulfr/Streamability',
     'https://streamability.herokuapp.com/',
-    './assets/screenshots/streamability-screenshot.png'
+    '../assets/screenshots/streamability-screenshot.png'
 );
 
 const typePlusPlus = new Project(
@@ -43,7 +43,7 @@ const typePlusPlus = new Project(
     'MERN-stack typing hub',
     'https://github.com/Thorulfr/type-Plus-Plus',
     'https://typeplusplus.herokuapp.com/',
-    './assets/screenshots/type-plus-plus-screenshot.png'
+    '../assets/screenshots/type-plus-plus-screenshot.png'
 );
 
 const weatherDashboard = new Project(
@@ -51,7 +51,7 @@ const weatherDashboard = new Project(
     'API-centric weather app',
     'https://github.com/Thorulfr/weather-dashboard',
     'https://thorulfr.github.io/weather-dashboard/',
-    './assets/screenshots/weather-dashboard-screenshot.png'
+    '../assets/screenshots/weather-dashboard-screenshot.png'
 );
 
 const projects = {
