@@ -28,6 +28,8 @@ body {
 
 .navlist-active {
     transform: unset !important;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* IMAGE STYLES */
