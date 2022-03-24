@@ -15,7 +15,8 @@ import Resume from './pages/Resume';
 function App() {
     const [currentPage, setCurrentPage] = useState('/');
     return (
-        <Router basename="/portfolio">
+        // <Router basename="/portfolio">
+        <Router>
             <div className="flex flex-col min-h-screen">
                 <Nav
                     currentPage={currentPage}
