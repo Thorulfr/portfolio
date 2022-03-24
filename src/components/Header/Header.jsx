@@ -3,6 +3,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = ({ currentPage, setCurrentPage }) => {
+    // Get viewport width
+    const vw = Math.max(
+        document.documentElement.clientWidth || 0,
+        window.innerWidth || 0
+    );
+
     const hamburgerToggle = () => {
         document
             .getElementById('hamburger-top')
@@ -14,9 +20,15 @@ const Header = ({ currentPage, setCurrentPage }) => {
             .getElementById('hamburger-bottom')
             .classList.toggle('button-transform-bottom-active');
         document.getElementById('nav-list').classList.toggle('navlist-active');
-        document
-            .getElementById('header-top')
-            .classList.toggle('navlist-active');
+        if (vw < 640) {
+            document
+                .getElementById('header-top')
+                .classList.toggle('navlist-active');
+        } else {
+            document
+                .getElementById('my-name')
+                .classList.toggle('navlist-active');
+        }
     };
 
     return (
@@ -24,10 +36,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
             {/* Header top */}
             <div
                 id="header-top"
-                className="w-full flex justify-between items-center p-2 transition-all duration-300 translate-y-4"
+                className="w-full flex justify-between items-center p-2 transition-all duration-300 translate-y-4 sm:translate-y-0"
             >
                 {/* Logo for mobile */}
-                <div className="flex justify-center items-center pl-2 text-2xl h-10 ">
+                <div className="flex justify-center items-center pl-2 text-2xl h-10 sm:translate-y-4">
                     {localStorage.theme === 'light' ? (
                         <img
                             src="./assets/images/logo.svg"
@@ -45,7 +57,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     )}
                 </div>
                 {/* Me + home link */}
-                <div>
+                <div
+                    id="my-name"
+                    className="transition-all duration-300 sm:translate-y-4"
+                >
                     <Link
                         to="/"
                         className="text-theme-pink text-lg md:text-2xl"
@@ -54,7 +69,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     </Link>
                 </div>
                 {/* Menu toggle */}
-                <div className="">
+                <div className="sm:translate-y-4">
                     <button
                         className="w-10 h-10 flex justify-center items-center focus:outline-none z-20 text-theme-purple"
                         onClick={hamburgerToggle}
