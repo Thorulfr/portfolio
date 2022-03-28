@@ -30,6 +30,7 @@ body {
     transform: unset !important;
     opacity: 1;
     visibility: visible;
+    height: unset;
 }
 
 /* IMAGE STYLES */

@@ -47,57 +47,82 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         id="logo-image-mobile"
                     />
                 </div>
+                {/* Menu toggle */}
+                <div className="">
+                    <button
+                        className="w-10 h-10 flex justify-center items-center focus:outline-none z-20 text-theme-pink"
+                        onClick={hamburgerToggle}
+                    >
+                        <span className="sr-only">Open main menu</span>
+                        {/* Hamburger elements */}
+                        <div className="block w-5 ">
+                            <span
+                                id="hamburger-top"
+                                aria-hidden="true"
+                                className="block h-0.5 w-5 bg-current transition-all duration-300 -translate-y-1 rounded-full"
+                            ></span>
+                            <span
+                                id="hamburger-middle"
+                                aria-hidden="true"
+                                className="block h-0.5 w-5 bg-current transition-all duration-300 rounded-full"
+                            ></span>
+                            <span
+                                id="hamburger-bottom"
+                                aria-hidden="true"
+                                className="block h-0.5 w-5 bg-current transition-all duration-300 translate-y-1 rounded-full"
+                            ></span>
+                        </div>
+                    </button>
+                </div>
             </div>
             {/* Header bottom/Nav */}
-            <nav className="w-full flex flex-wrap justify-around">
+            <nav className="w-full flex justify-center">
                 <ul
                     id="nav-list"
-                    className="w-full flex justify-evenly pb-1 text-theme-lilac transition-all duration-300 md:text-lg"
+                    className="w-full flex justify-around pb-1 text-theme-pink opacity-0 invisible transition-all duration-300 sm:w-4/5 md:text-lg xl:w-2/3 2xl:w-1/2"
                 >
                     <li>
                         <Link
                             to="/"
                             onClick={() => setCurrentPage('/')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
-                                currentPage === '/' && 'text-theme-pink'
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === '/' && 'text-theme-orange'
                             }`}
                         >
-                            //About
+                            About
                         </Link>
                     </li>
                     <li>
                         <Link
                             to="/work"
                             onClick={() => setCurrentPage('work')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
-                                currentPage === 'work' && 'text-theme-pink'
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'work' && 'text-theme-orange'
                             }`}
                         >
-                            //Work
+                            Work
                         </Link>
                     </li>
-                </ul>
-                <ul className="w-full flex justify-evenly pb-3 text-theme-lilac transition-all duration-300 md:text-lg2">
                     <li>
                         <Link
                             to="/resume"
                             onClick={() => setCurrentPage('resume')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
-                                currentPage === 'resume' && 'text-theme-pink'
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'resume' && 'text-theme-orange'
                             }`}
                         >
-                            //Resume
+                            Resume
                         </Link>
                     </li>
                     <li>
                         <Link
                             to="/contact"
                             onClick={() => setCurrentPage('contact')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
-                                currentPage === 'contact' && 'text-theme-pink'
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'contact' && 'text-theme-orange'
                             }`}
                         >
-                            //Contact
+                            Contact
                         </Link>
                     </li>
                 </ul>
