@@ -8,7 +8,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
             <nav className="w-full flex justify-center">
                 <ul
                     id="nav-list"
-                    className="flex flex-col grow justify-evenly pr-2 text-right text-theme-lilac transition-all duration-300 md:text-lg"
+                    className="flex flex-col grow justify-evenly pr-2 text-right text-theme-lilac transition-all duration-300 sm:text-lg sm:pr-12 lg:pr-20 xl:pr-36"
                 >
                     <li>
                         <Link
@@ -42,7 +42,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         id="logo-image-mobile"
                     />
                 </div>
-                <ul className="flex flex-col grow justify-evenly pl-3 text-left text-theme-lilac transition-all duration-300 md:text-lg2">
+                <ul className="flex flex-col grow justify-evenly pl-2 text-left text-theme-lilac transition-all duration-300 sm:text-lg sm:pl-12 lg:pl-20 xl:pl-36">
                     <li>
                         <Link
                             to="/work"
