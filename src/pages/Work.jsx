@@ -1,5 +1,5 @@
 // Imports
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // Component imports
 import Project from '../components/Project';
@@ -7,7 +7,12 @@ import Project from '../components/Project';
 // Utility Imports
 import projects from '../utils/projects';
 
-const Work = () => {
+const Work = ({ setCurrentPage }) => {
+    // Set current page in header/nav
+    useEffect(() => {
+        setCurrentPage('work');
+    });
+
     return (
         <main className="px-4 text-theme-purple md:px-12 lg:px-32 xl:grid xl:grid-cols-2 xl:my-6">
             <div>

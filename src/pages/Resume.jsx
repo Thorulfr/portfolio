@@ -1,7 +1,12 @@
 // Imports
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Resume = () => {
+const Resume = ({ setCurrentPage }) => {
+    // Set current page in header/nav
+    useEffect(() => {
+        setCurrentPage('resume');
+    });
+
     return (
         <main className="grow flex flex-col justify-around items-center px-4 md:px-12 lg:px-32 lg:text-xl">
             <div className="mt-4 flex flex-col justify-around items-center text-theme-purple">

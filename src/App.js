@@ -24,10 +24,42 @@ function App() {
                 />
                 <div className="grow flex">
                     <Routes>
-                        <Route path="/" element={<AboutMe />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/work" element={<Work />} />
-                        <Route path="/resume" element={<Resume />} />
+                        <Route
+                            path="/"
+                            element={
+                                <AboutMe
+                                    currentPage={currentPage}
+                                    setCurrentPage={setCurrentPage}
+                                />
+                            }
+                        />
+                        <Route
+                            path="/contact"
+                            element={
+                                <Contact
+                                    currentPage={currentPage}
+                                    setCurrentPage={setCurrentPage}
+                                />
+                            }
+                        />
+                        <Route
+                            path="/work"
+                            element={
+                                <Work
+                                    currentPage={currentPage}
+                                    setCurrentPage={setCurrentPage}
+                                />
+                            }
+                        />
+                        <Route
+                            path="/resume"
+                            element={
+                                <Resume
+                                    currentPage={currentPage}
+                                    setCurrentPage={setCurrentPage}
+                                />
+                            }
+                        />
                     </Routes>
                 </div>
                 <Footer />

@@ -1,7 +1,12 @@
 // Imports
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const AboutMe = () => {
+const AboutMe = ({ setCurrentPage }) => {
+    // Set current page in header/nav
+    useEffect(() => {
+        setCurrentPage('/');
+    });
+
     return (
         <main className="flex flex-col my-6 text-theme-purple sm:items-center sm:justify-center 2xl:text-lg">
             <img

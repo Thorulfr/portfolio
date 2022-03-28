@@ -1,10 +1,15 @@
 // Imports
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Utility imports
 import { validateEmail } from '../utils/helpers';
 
-const Contact = () => {
+const Contact = ({ setCurrentPage }) => {
+    // Set current page in header/nav
+    useEffect(() => {
+        setCurrentPage('contact');
+    });
+
     // Initialize useState to control inputs
     const [formState, setFormState] = useState({
         name: '',
