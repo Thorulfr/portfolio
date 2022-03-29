@@ -18,7 +18,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                                 currentPage === '/' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
-                            //About
+                            {'//About'}
                         </Link>
                     </li>
                     <li>
@@ -29,18 +29,52 @@ const Header = ({ currentPage, setCurrentPage }) => {
                                 currentPage === 'contact' && 'text-theme-pink'
                             }`}
                         >
-                            //Contact
+                            {'//Contact'}
                         </Link>
                     </li>
                 </ul>
                 {/* Logo */}
-                <div className="flex justify-center items-center text-2xl h-20">
-                    <img
-                        src="./assets/images/logo.svg"
-                        alt="Benjamin Holt monogram"
-                        className="h-full z-20"
-                        id="logo-image-mobile"
-                    />
+                <div className="flex justify-center items-center text-2xl">
+                    <svg
+                        className="h-20 w-20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0"
+                        y="0"
+                        enableBackground="new 0 0 512 512"
+                        version="1.1"
+                        viewBox="0 0 512 512"
+                        xmlSpace="preserve"
+                    >
+                        <path
+                            fill="#e83f6f"
+                            d="M456 161.8V456H202.8L56 350.2V56h253.2z"
+                        ></path>
+                        <g>
+                            <g>
+                                <path
+                                    fill="none"
+                                    stroke="#190e4f"
+                                    stroke-width="17.5"
+                                    stroke-miterlimit="10"
+                                    d="M307.6 148.4H204.4v188.9l.5-.4 49.2-47.1-49.2-46.9"
+                                ></path>
+                                <path
+                                    fill="none"
+                                    stroke="#190e4f"
+                                    stroke-width="17.5"
+                                    stroke-miterlimit="10"
+                                    d="M298.7 400.4v-159H205"
+                                ></path>
+                                <path
+                                    fill="none"
+                                    stroke="#190e4f"
+                                    stroke-width="17.5"
+                                    stroke-miterlimit="10"
+                                    d="M204.8 241.9l47.2-47.2-47.2-47.1m0 94.4l93.3 90.3"
+                                ></path>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
                 <ul className="flex flex-col grow justify-evenly pl-4 text-left text-theme-lilac sm:text-lg sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
                     <li>
@@ -51,7 +85,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                                 currentPage === 'work' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
-                            //Work
+                            {'//Work'}
                         </Link>
                     </li>
                     <li>
@@ -62,7 +96,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                                 currentPage === 'resume' && 'text-theme-pink'
                             }`}
                         >
-                            //Resume
+                            {'//Resume'}
                         </Link>
                     </li>
                 </ul>
