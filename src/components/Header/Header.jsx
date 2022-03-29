@@ -14,7 +14,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/"
                             onClick={() => setCurrentPage('/')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
+                            className={`hover:text-theme-orange transition-all duration-300 ${
                                 currentPage === '/' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
@@ -25,7 +25,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/contact"
                             onClick={() => setCurrentPage('contact')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
+                            className={`hover:text-theme-orange transition-all duration-300 ${
                                 currentPage === 'contact' && 'text-theme-pink'
                             }`}
                         >
@@ -54,22 +54,22 @@ const Header = ({ currentPage, setCurrentPage }) => {
                                 <path
                                     fill="none"
                                     stroke="#190e4f"
-                                    stroke-width="17.5"
-                                    stroke-miterlimit="10"
+                                    strokeWidth="17.5"
+                                    strokeMiterlimit="10"
                                     d="M307.6 148.4H204.4v188.9l.5-.4 49.2-47.1-49.2-46.9"
                                 ></path>
                                 <path
                                     fill="none"
                                     stroke="#190e4f"
-                                    stroke-width="17.5"
-                                    stroke-miterlimit="10"
+                                    strokeWidth="17.5"
+                                    strokeMiterlimit="10"
                                     d="M298.7 400.4v-159H205"
                                 ></path>
                                 <path
                                     fill="none"
                                     stroke="#190e4f"
-                                    stroke-width="17.5"
-                                    stroke-miterlimit="10"
+                                    strokeWidth="17.5"
+                                    strokeMiterlimit="10"
                                     d="M204.8 241.9l47.2-47.2-47.2-47.1m0 94.4l93.3 90.3"
                                 ></path>
                             </g>
@@ -81,7 +81,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/work"
                             onClick={() => setCurrentPage('work')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
+                            className={`hover:text-theme-orange transition-all duration-300 ${
                                 currentPage === 'work' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
@@ -92,7 +92,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/resume"
                             onClick={() => setCurrentPage('resume')}
-                            className={`hover:text-theme-pink transition-all duration-300 ${
+                            className={`hover:text-theme-orange transition-all duration-300 ${
                                 currentPage === 'resume' && 'text-theme-pink'
                             }`}
                         >
