@@ -8,7 +8,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
             <nav className="w-full flex justify-center">
                 <ul
                     id="nav-list"
-                    className="flex flex-col grow justify-evenly pr-2 text-right text-theme-lilac transition-all duration-300 sm:text-lg sm:pr-12 lg:pr-20 xl:pr-36"
+                    className="flex flex-col grow justify-evenly pr-4 text-right text-theme-lilac sm:text-lg sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
                 >
                     <li>
                         <Link
@@ -16,7 +16,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                             onClick={() => setCurrentPage('/')}
                             className={`hover:text-theme-pink transition-all duration-300 ${
                                 currentPage === '/' && 'text-theme-pink'
-                            }`}
+                            } lg:pr-20`}
                         >
                             //About
                         </Link>
@@ -42,14 +42,14 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         id="logo-image-mobile"
                     />
                 </div>
-                <ul className="flex flex-col grow justify-evenly pl-2 text-left text-theme-lilac transition-all duration-300 sm:text-lg sm:pl-12 lg:pl-20 xl:pl-36">
+                <ul className="flex flex-col grow justify-evenly pl-4 text-left text-theme-lilac sm:text-lg sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
                     <li>
                         <Link
                             to="/work"
                             onClick={() => setCurrentPage('work')}
                             className={`hover:text-theme-pink transition-all duration-300 ${
                                 currentPage === 'work' && 'text-theme-pink'
-                            }`}
+                            } lg:pr-20`}
                         >
                             //Work
                         </Link>
