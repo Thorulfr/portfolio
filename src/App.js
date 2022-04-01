@@ -17,7 +17,7 @@ function App() {
     return (
         // <Router basename="/portfolio">
         <Router>
-            <div className="flex flex-col min-h-screen">
+            <div className="flex flex-col min-h-screen bg-theme-purple">
                 <Nav
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}

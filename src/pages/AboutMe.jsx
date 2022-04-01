@@ -8,7 +8,7 @@ const AboutMe = ({ setCurrentPage }) => {
     });
 
     return (
-        <main className="flex text-theme-lilac bg-theme-purple">
+        <main className="flex text-theme-lilac">
             <div className="flex flex-col p-6 items-center justify-center 2xl:text-lg">
                 <img
                     src="./assets/images/self-portrait.png"
