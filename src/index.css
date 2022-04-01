@@ -34,8 +34,7 @@ body {
 }
 
 /* IMAGE STYLES */
-/* Overlay */
-.overlay {
-    position: absolute;
-    left: 0;
+.shadow-1 {
+    filter: drop-shadow(-20px 0px 0px #190e4f)
+        drop-shadow(-20px 0px 0px #e83f6f);
 }

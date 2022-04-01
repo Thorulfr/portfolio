@@ -8,11 +8,11 @@ const AboutMe = ({ setCurrentPage }) => {
     });
 
     return (
-        <main className="flex flex-col my-6 text-theme-purple sm:items-center sm:justify-center 2xl:text-lg">
+        <main className="flex flex-col py-6 text-theme-lilac bg-theme-purple sm:items-center sm:justify-center 2xl:text-lg">
             <img
-                src="./assets/images/self-portrait.jpg"
+                src="./assets/images/self-portrait.png"
                 alt="Benjamin in a lava field in northern Iceland"
-                className="mb-6 mx-12 rounded-bl-2xl rounded-tr-2xl sm:w-2/3 md:w-1/2 lg:w-1/3"
+                className="mb-6 mx-12 sm:w-2/3 md:w-1/2 lg:w-1/3 shadow-1"
             ></img>
             <div className="text-justify px-6 sm:px-12 2xl:px-60">
                 <p>
