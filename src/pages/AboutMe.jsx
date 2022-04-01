@@ -13,7 +13,7 @@ const AboutMe = ({ setCurrentPage }) => {
                 <img
                     src="./assets/images/self-portrait.png"
                     alt="Benjamin in a lava field in northern Iceland"
-                    className="p-6 sm:w-2/3 md:w-1/2 lg:w-1/3"
+                    className="pb-6 sm:w-2/3 md:w-1/2 lg:w-1/3"
                 ></img>
                 <div className="text-justify">
                     <p>
