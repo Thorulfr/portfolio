@@ -36,5 +36,5 @@ body {
 /* IMAGE STYLES */
 .shadow-1 {
     filter: drop-shadow(-20px 0px 0px #190e4f)
-        drop-shadow(-20px 0px 0px #e83f6f);
+        drop-shadow(-17px 0px 0px #e83f6f);
 }
