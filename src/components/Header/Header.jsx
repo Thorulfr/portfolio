@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="nav-header" className="py-3">
-            <nav className="w-full flex justify-center sm:text-xl md:text-2xl lg:text-3xl">
+            <nav className="w-full flex justify-center sm:text-xl md:text-2xl xl:text-3xl">
                 <ul
                     id="nav-list"
                     className="flex flex-col grow justify-evenly pr-4 text-right text-theme-lilac sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
