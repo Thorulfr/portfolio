@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="nav-header" className="py-3">
-            <nav className="w-full flex justify-center">
+            <nav className="w-full flex justify-center sm:text-xl md:text-2xl lg:text-3xl">
                 <ul
                     id="nav-list"
-                    className="flex flex-col grow justify-evenly pr-4 text-right text-theme-lilac sm:text-lg sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
+                    className="flex flex-col grow justify-evenly pr-4 text-right text-theme-lilac sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
                 >
                     <li>
                         <Link
@@ -34,7 +34,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     </li>
                 </ul>
                 {/* Logo */}
-                <div className="flex justify-center items-center text-2xl">
+                <div className="flex justify-center items-center">
                     <svg
                         className="h-20 w-20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         </g>
                     </svg>
                 </div>
-                <ul className="flex flex-col grow justify-evenly pl-4 text-left text-theme-lilac sm:text-lg sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
+                <ul className="flex flex-col grow justify-evenly pl-4 text-left text-theme-lilac sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
                     <li>
                         <Link
                             to="/work"

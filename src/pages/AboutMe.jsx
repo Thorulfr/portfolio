@@ -9,13 +9,14 @@ const AboutMe = ({ setCurrentPage }) => {
 
     return (
         <main className="flex text-theme-lilac">
-            <div className="flex flex-col p-6 items-center justify-center 2xl:text-lg">
+            <div className="flex flex-col p-6 items-center md:text-lg 2xl:flex-row">
                 <img
                     src="./assets/images/self-portrait.png"
                     alt="Benjamin in a lava field in northern Iceland"
-                    className="pb-6 sm:w-2/3 md:w-1/2 lg:w-1/3"
+                    className="pb-9 sm:w-2/3 lg:w-3/5 xl:w-1/2 2xl:px-6"
                 ></img>
-                <div className="text-justify">
+                <div className="text-justify sm:px-9">
+                    <p className="text-center text-3xl pb-6">Howdy. I'm Ben.</p>
                     <p>
                         I'm a full-stack web developer with a penchant for
                         creating especially pleasing user experiences. Though
