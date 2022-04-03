@@ -50,8 +50,8 @@ const Contact = ({ setCurrentPage }) => {
     }
 
     return (
-        <main className="grow text-theme-purple px-4 flex flex-col sm:items-center sm:justify-center md:px-12 lg:px-32 lg:text-xl 2xl:px-52">
-            <div className="m-4 px-12 xl:px-16 2xl:px-20">
+        <main className="grow text-theme-lilac px-4 flex flex-col items-center justify-center md:px-12 lg:px-32 lg:text-xl 2xl:px-52">
+            <div className="m-4 xl:px-16 2xl:px-20">
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
