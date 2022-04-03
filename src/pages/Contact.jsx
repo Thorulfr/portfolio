@@ -58,7 +58,20 @@ const Contact = ({ setCurrentPage }) => {
                     I'll get back to you ASAP!
                 </p>
             </div>
-            <div className="m-4 p-6 rounded-bl-2xl rounded-tr-2xl shadow-sm bg-theme-lilac/[.20] sm:w-5/6 ">
+            <div
+                className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12"
+                id="email-form"
+            >
+                <img
+                    src="./assets/images/bottom-left-frame.svg"
+                    alt=""
+                    className="absolute -bottom-1 -left-1 w-10 sm:w-16"
+                />
+                <img
+                    src="./assets/images/top-right-frame.svg"
+                    alt=""
+                    className="absolute -top-1 -right-1 w-10 sm:w-16"
+                />
                 <form onSubmit={handleSubmit}>
                     <div className="mb-6">
                         <input
