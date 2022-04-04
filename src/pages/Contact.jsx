@@ -62,16 +62,25 @@ const Contact = ({ setCurrentPage }) => {
                 className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12"
                 id="email-form"
             >
-                <img
-                    src="./assets/images/bottom-left-frame.svg"
-                    alt=""
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 146.32 105.45"
                     className="absolute -bottom-1 -left-1 w-10 sm:w-16"
-                />
-                <img
-                    src="./assets/images/top-right-frame.svg"
-                    alt=""
+                >
+                    <path
+                        fill="#190e4f"
+                        d="M146.32 105.45H0V0l146.32 105.45z"
+                    ></path>
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 146.32 105.45"
                     className="absolute -top-1 -right-1 w-10 sm:w-16"
-                />
+                >
+                    <path fill="#190e4f" d="M0 0h146.32v105.45L0 0z"></path>
+                </svg>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-6">
                         <input
