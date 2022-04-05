@@ -62,6 +62,7 @@ const Contact = ({ setCurrentPage }) => {
                 className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12"
                 id="email-form"
             >
+                {/* Bottom-left frame */}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     data-name="Layer 1"
@@ -73,6 +74,7 @@ const Contact = ({ setCurrentPage }) => {
                         d="M146.32 105.45H0V0l146.32 105.45z"
                     ></path>
                 </svg>
+                {/* Top-right frame */}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     data-name="Layer 1"
@@ -82,7 +84,8 @@ const Contact = ({ setCurrentPage }) => {
                     <path fill="#190e4f" d="M0 0h146.32v105.45L0 0z"></path>
                 </svg>
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-6">
+                    {/* Name input */}
+                    <div className="mb-6 relative">
                         <input
                             type="text"
                             id="nameInput"
@@ -90,10 +93,35 @@ const Contact = ({ setCurrentPage }) => {
                             placeholder="Name"
                             defaultValue={name}
                             onBlur={handleChange}
-                            className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black focus:outline-none"
                         ></input>
+                        {/* Bottom-left frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -bottom-1 -left-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M146.32 105.45H0V0l146.32 105.45z"
+                            ></path>
+                        </svg>
+                        {/* Top-right frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M0 0h146.32v105.45L0 0z"
+                            ></path>
+                        </svg>
                     </div>
-                    <div className="mb-6">
+                    {/* Email input */}
+                    <div className="mb-6 relative">
                         <input
                             type="email"
                             id="emailInput"
@@ -101,10 +129,35 @@ const Contact = ({ setCurrentPage }) => {
                             placeholder="E-mail Address"
                             defaultValue={email}
                             onBlur={handleChange}
-                            className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black focus:outline-none"
                         />
+                        {/* Bottom-left frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -bottom-1 -left-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M146.32 105.45H0V0l146.32 105.45z"
+                            ></path>
+                        </svg>
+                        {/* Top-right frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M0 0h146.32v105.45L0 0z"
+                            ></path>
+                        </svg>
                     </div>
-                    <div className="mb-6">
+                    {/* Message input */}
+                    <div className="mb-6 relative">
                         <textarea
                             id="messageInput"
                             name="message"
@@ -112,8 +165,32 @@ const Contact = ({ setCurrentPage }) => {
                             placeholder="Your Message"
                             defaultValue={message}
                             onBlur={handleChange}
-                            className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black focus:outline-none"
                         />
+                        {/* Bottom-left frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute bottom-[.065rem] -left-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M146.32 105.45H0V0l146.32 105.45z"
+                            ></path>
+                        </svg>
+                        {/* Top-right frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M0 0h146.32v105.45L0 0z"
+                            ></path>
+                        </svg>
                     </div>
                     {errorMessage && (
                         <div>
@@ -122,7 +199,7 @@ const Contact = ({ setCurrentPage }) => {
                     )}
                     <button
                         type="submit"
-                        className="w-full px-6 py-2.5 bg-theme-purple text-theme-pink font-black rounded shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
+                        className="w-full px-6 py-2.5 bg-theme-purple text-theme-pink font-black  shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
                     >
                         Submit
                     </button>
