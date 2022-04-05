@@ -20,9 +20,6 @@ const Contact = ({ setCurrentPage }) => {
     // Destructure defaults
     const { name, email, message } = formState;
 
-    // Initialize useState to control error messages
-    const [errorMessage, setErrorMessage] = useState('');
-
     // Handle changes to input fields
     function handleChange(evt) {
         setFormState({ ...formState, [evt.target.name]: evt.target.value });
@@ -161,7 +158,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute bottom-[.065rem] -left-1 w-5"
+                            className="absolute bottom-[.175rem] -left-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -181,14 +178,9 @@ const Contact = ({ setCurrentPage }) => {
                             ></path>
                         </svg>
                     </div>
-                    {errorMessage && (
-                        <div>
-                            <p className="error-text">{errorMessage}</p>
-                        </div>
-                    )}
                     <button
                         type="submit"
-                        className="w-full px-6 py-2.5 relative bg-theme-purple text-theme-pink font-black shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
+                        className="w-full px-6 py-2.5 bg-theme-purple text-theme-pink font-black shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
                     >
                         Submit
                         {/* Bottom-left frame */}
@@ -196,7 +188,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -bottom-1 -left-1 w-5"
+                            className="absolute bottom-7 left-7 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -208,7 +200,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -top-1 -right-1 w-5"
+                            className="absolute top-[17.85rem] right-7 w-5"
                         >
                             <path
                                 fill="#342b6e"
