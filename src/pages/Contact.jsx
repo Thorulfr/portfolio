@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 // Utility imports
-import { validateEmail } from '../utils/helpers';
+import validator from 'validator';
 
 const Contact = ({ setCurrentPage }) => {
     // Set current page in header/nav
@@ -20,33 +20,22 @@ const Contact = ({ setCurrentPage }) => {
     // Destructure defaults
     const { name, email, message } = formState;
 
+    // Initialize validation checks
+    let validName = !validator.isEmpty(name);
+    let validEmail = validator.isEmail(email);
+    let validMessage = !validator.isEmpty(message);
+
     // Initialize useState to control error messages
     const [errorMessage, setErrorMessage] = useState('');
 
     // Handle changes to input fields
     function handleChange(evt) {
-        // Email validation
-        if (evt.target.name === 'email') {
-            const isValid = validateEmail(evt.target.value);
-            if (!isValid) {
-                setErrorMessage('Please enter a valid e-mail address!');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!evt.target.value.length) {
-                setErrorMessage(`${evt.target.name} is required!`);
-            } else {
-                setErrorMessage('');
-            }
-        }
         setFormState({ ...formState, [evt.target.name]: evt.target.value });
     }
 
     // Handle form submission
     function handleSubmit(evt) {
         evt.preventDefault();
-        console.log(formState);
     }
 
     return (
@@ -92,7 +81,7 @@ const Contact = ({ setCurrentPage }) => {
                             name="name"
                             placeholder="Name"
                             defaultValue={name}
-                            onBlur={handleChange}
+                            onInput={handleChange}
                             className="w-full px-3 py-1.5 font-black focus:outline-none"
                         ></input>
                         {/* Bottom-left frame */}
@@ -121,14 +110,14 @@ const Contact = ({ setCurrentPage }) => {
                         </svg>
                     </div>
                     {/* Email input */}
-                    <div className="mb-6 relative">
+                    <div className="mb-6 relative ">
                         <input
                             type="email"
                             id="emailInput"
                             name="email"
                             placeholder="E-mail Address"
                             defaultValue={email}
-                            onBlur={handleChange}
+                            onInput={handleChange}
                             className="w-full px-3 py-1.5 font-black focus:outline-none"
                         />
                         {/* Bottom-left frame */}
@@ -164,7 +153,7 @@ const Contact = ({ setCurrentPage }) => {
                             rows="4"
                             placeholder="Your Message"
                             defaultValue={message}
-                            onBlur={handleChange}
+                            onInput={handleChange}
                             className="w-full px-3 py-1.5 font-black focus:outline-none"
                         />
                         {/* Bottom-left frame */}
