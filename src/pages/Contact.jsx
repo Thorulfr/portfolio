@@ -51,7 +51,7 @@ const Contact = ({ setCurrentPage }) => {
 
     return (
         <main className="grow text-theme-lilac px-4 flex flex-col items-center justify-center md:px-12 lg:px-32 lg:text-xl 2xl:px-52">
-            <div className="m-4 xl:px-16 2xl:px-20">
+            <div className="m-4 flex justify-center sm:w-5/6">
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
@@ -100,7 +100,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -bottom-1 -left-1 w-5 sm:w-16"
+                            className="absolute -bottom-1 -left-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -112,7 +112,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                            className="absolute -top-1 -right-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -136,7 +136,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -bottom-1 -left-1 w-5 sm:w-16"
+                            className="absolute -bottom-1 -left-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -148,7 +148,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                            className="absolute -top-1 -right-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -172,7 +172,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute bottom-[.065rem] -left-1 w-5 sm:w-16"
+                            className="absolute bottom-[.065rem] -left-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -184,7 +184,7 @@ const Contact = ({ setCurrentPage }) => {
                             xmlns="http://www.w3.org/2000/svg"
                             data-name="Layer 1"
                             viewBox="0 0 146.32 105.45"
-                            className="absolute -top-1 -right-1 w-5 sm:w-16"
+                            className="absolute -top-1 -right-1 w-5"
                         >
                             <path
                                 fill="#342b6e"
@@ -199,9 +199,33 @@ const Contact = ({ setCurrentPage }) => {
                     )}
                     <button
                         type="submit"
-                        className="w-full px-6 py-2.5 bg-theme-purple text-theme-pink font-black  shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
+                        className="w-full px-6 py-2.5 relative bg-theme-purple text-theme-pink font-black shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
                     >
                         Submit
+                        {/* Bottom-left frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -bottom-1 -left-1 w-5"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M146.32 105.45H0V0l146.32 105.45z"
+                            ></path>
+                        </svg>
+                        {/* Top-right frame */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 146.32 105.45"
+                            className="absolute -top-1 -right-1 w-5"
+                        >
+                            <path
+                                fill="#342b6e"
+                                d="M0 0h146.32v105.45L0 0z"
+                            ></path>
+                        </svg>
                     </button>
                 </form>
             </div>
