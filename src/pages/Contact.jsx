@@ -1,5 +1,5 @@
 // Imports
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, setState } from 'react';
 
 // Utility imports
 import validator from 'validator';
@@ -20,11 +20,6 @@ const Contact = ({ setCurrentPage }) => {
     // Destructure defaults
     const { name, email, message } = formState;
 
-    // Initialize validation checks
-    let validName = !validator.isEmpty(name);
-    let validEmail = validator.isEmail(email);
-    let validMessage = !validator.isEmpty(message);
-
     // Initialize useState to control error messages
     const [errorMessage, setErrorMessage] = useState('');
 
@@ -36,6 +31,7 @@ const Contact = ({ setCurrentPage }) => {
     // Handle form submission
     function handleSubmit(evt) {
         evt.preventDefault();
+        console.log(name, email, message);
     }
 
     return (
@@ -80,9 +76,10 @@ const Contact = ({ setCurrentPage }) => {
                             id="nameInput"
                             name="name"
                             placeholder="Name"
+                            required
                             defaultValue={name}
                             onInput={handleChange}
-                            className="w-full px-3 py-1.5 font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black border-l-4 invalid:border-theme-pink valid:border-theme-green focus:outline-none transition duration-300 ease-in-out"
                         ></input>
                         {/* Bottom-left frame */}
                         <svg
@@ -116,9 +113,10 @@ const Contact = ({ setCurrentPage }) => {
                             id="emailInput"
                             name="email"
                             placeholder="E-mail Address"
+                            required
                             defaultValue={email}
                             onInput={handleChange}
-                            className="w-full px-3 py-1.5 font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black border-l-4 invalid:border-theme-pink valid:border-theme-green focus:outline-none transition duration-300 ease-in-out"
                         />
                         {/* Bottom-left frame */}
                         <svg
@@ -152,9 +150,11 @@ const Contact = ({ setCurrentPage }) => {
                             name="message"
                             rows="4"
                             placeholder="Your Message"
+                            required
+                            minLength="10"
                             defaultValue={message}
                             onInput={handleChange}
-                            className="w-full px-3 py-1.5 font-black focus:outline-none"
+                            className="w-full px-3 py-1.5 font-black border-l-4 invalid:border-theme-pink valid:border-theme-green focus:outline-none transition duration-300 ease-in-out"
                         />
                         {/* Bottom-left frame */}
                         <svg
