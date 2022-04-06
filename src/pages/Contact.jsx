@@ -39,19 +39,18 @@ const Contact = ({ setCurrentPage }) => {
             method: 'POST',
             body,
         };
-        fetch(endpoint, requestOptions)
-            .then((response) => {
-                if (!response.ok) throw new Error('Error in fetch');
-                return response.json();
-            })
-            .then((response) => {
-                document.getElementById('result-text').innerText =
-                    'Email sent successfully!';
-            })
-            .catch((error) => {
-                document.getElementById('result-text').innerText =
-                    'An unknown error occurred.';
-            });
+        fetch(endpoint, requestOptions).then((response) => {
+            if (!response.ok) throw new Error('Error in fetch');
+            return response.json();
+        });
+        // .then((response) => {
+        //     document.getElementById('result-text').innerText =
+        //         'Email sent successfully!';
+        // })
+        // .catch((error) => {
+        //     document.getElementById('result-text').innerText =
+        //         'An unknown error occurred.';
+        // });
     }
 
     return (
@@ -60,10 +59,17 @@ const Contact = ({ setCurrentPage }) => {
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
-                    I'll get back to you ASAP!
+                    I'll get back to you ASAP! <br /> <br />
+                    You can also reach me directly{' '}
+                    <a
+                        href="mailto:holt.benjamin.eric@gmail.com"
+                        className="text-theme-orange"
+                    >
+                        via e-mail
+                    </a>
+                    .
                 </p>
             </div>
-            <div id="result-text">Did it work?</div>
             <div
                 className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12"
                 id="email-form"
