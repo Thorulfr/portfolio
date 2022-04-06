@@ -5,15 +5,16 @@ function Project(project) {
     return (
         <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-20 2xl:px-40">
             {/* Project name */}
-            <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1 lg:text-xl">
+            <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl">
                 {project.project.name}
             </span>
             {/* Project screenshot */}
-            <img
-                src={project.project.imagePath}
-                alt="Application screenshot"
-                className="m-3 rounded-bl-2xl rounded-tr-2xl"
-            />
+            <div className="m-3">
+                <img
+                    src={project.project.imagePath}
+                    alt="Application screenshot"
+                />
+            </div>
             {/* Project description */}
             <p className="text-center">{project.project.description}</p>
             <div className="w-1/2 flex justify-evenly items-center p-1 mb-1">
