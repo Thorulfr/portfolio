@@ -28,7 +28,30 @@ const Contact = ({ setCurrentPage }) => {
     // Handle form submission
     function handleSubmit(evt) {
         evt.preventDefault();
-        console.log(name, email, message);
+        const endpoint =
+            'https://m29d885kl7.execute-api.us-east-1.amazonaws.com/default/send-contact-form-email';
+        const body = JSON.stringify({
+            senderName: name,
+            senderEmail: email,
+            message: message,
+        });
+        const requestOptions = {
+            method: 'POST',
+            body,
+        };
+        fetch(endpoint, requestOptions)
+            .then((response) => {
+                if (!response.ok) throw new Error('Error in fetch');
+                return response.json();
+            })
+            .then((response) => {
+                document.getElementById('result-text').innerText =
+                    'Email sent successfully!';
+            })
+            .catch((error) => {
+                document.getElementById('result-text').innerText =
+                    'An unknown error occurred.';
+            });
     }
 
     return (
@@ -40,6 +63,7 @@ const Contact = ({ setCurrentPage }) => {
                     I'll get back to you ASAP!
                 </p>
             </div>
+            <div id="result-text">Did it work?</div>
             <div
                 className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12"
                 id="email-form"
