@@ -28,12 +28,15 @@ const Contact = ({ setCurrentPage }) => {
     // Handle form submission
     function handleSubmit(evt) {
         evt.preventDefault();
+        // Disable button after submission
         document.getElementById('contact-submit-button').disabled = true;
         document
             .getElementById('contact-submit-button')
             .classList.remove('hover:text-theme-orange', 'hover:shadow-lg');
+        // API endpoint for AWS SES
         const endpoint =
             'https://m29d885kl7.execute-api.us-east-1.amazonaws.com/default/send-contact-form-email';
+        // Prep API request
         const body = JSON.stringify({
             senderName: name,
             senderEmail: email,
@@ -43,6 +46,7 @@ const Contact = ({ setCurrentPage }) => {
             method: 'POST',
             body,
         };
+        // Fetch request to AWS SES endpoint
         fetch(endpoint, requestOptions)
             .then((response) => {
                 if (!response.ok) throw new Error('Error in fetch');
