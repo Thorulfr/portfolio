@@ -116,7 +116,7 @@ const Resume = ({ setCurrentPage }) => {
                     />
                 </div>
             </div>
-            <div className="grow m-4 pb-4 flex flex-col justify-around items-center text-theme-lilac xl:w-2/3">
+            <div className="grow m-4 py-4 flex flex-col justify-around items-center text-theme-lilac xl:w-2/3">
                 <p className="mb-4 underline underline-offset-1 decoration- decoration-theme-pink">
                     Resume
                 </p>
