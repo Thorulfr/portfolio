@@ -3,13 +3,13 @@ import React from 'react';
 
 function Project(project) {
     return (
-        <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-20 2xl:px-40">
+        <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-10 2xl:px-20">
             {/* Project name */}
-            <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl">
+            <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl xl:text-2xl">
                 {project.project.name}
             </span>
             {/* Project screenshot */}
-            <div className="m-3">
+            <div className="m-3 sm:w-5/6">
                 <img
                     src={project.project.imagePath}
                     alt="Application screenshot"
