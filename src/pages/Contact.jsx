@@ -114,7 +114,7 @@ const Contact = ({ setCurrentPage }) => {
                 </div>
                 <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col items-center z-10 m-4 p-3"
+                    className="flex flex-col items-center z-10 m-4 p-3 sm:p-4"
                 >
                     {/* Name input */}
                     <div className="mb-6 relative w-full">
