@@ -17,7 +17,8 @@ function App() {
     return (
         // <Router basename="/portfolio">
         <Router>
-            <div className="flex flex-col min-h-screen bg-theme-purple">
+            {/* <div className="flex flex-col min-h-screen bg-theme-purple"> */}
+            <div className="flex flex-col min-h-screen bg-theme-purple bg-gradient-to-b from-theme-purple to-current sm:bg-gradient-to-br">
                 <Nav
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}

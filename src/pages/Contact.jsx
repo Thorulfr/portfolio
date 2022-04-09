@@ -69,7 +69,7 @@ const Contact = ({ setCurrentPage }) => {
 
     return (
         <main className="grow text-theme-lilac px-4 flex flex-col items-center justify-center md:px-12 lg:px-32 lg:text-xl 2xl:px-52">
-            <div className="m-4 flex justify-center sm:w-5/6 2xl:w-2/3">
+            <div className="mx-4 my-10 flex justify-center sm:w-5/6 2xl:w-2/3">
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
@@ -84,34 +84,37 @@ const Contact = ({ setCurrentPage }) => {
                     .
                 </p>
             </div>
-            <div
-                className="m-4 p-8 relative bg-theme-lilac/[.20] sm:w-5/6 sm:p-12 2xl:w-2/3"
-                id="email-form"
-            >
-                {/* Bottom-left frame */}
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-name="Layer 1"
-                    viewBox="0 0 146.32 105.45"
-                    className="absolute -bottom-1 -left-1 w-10 sm:w-16"
-                >
-                    <path
-                        fill="#190e4f"
-                        d="M146.32 105.45H0V0l146.32 105.45z"
-                    ></path>
-                </svg>
-                {/* Top-right frame */}
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-name="Layer 1"
-                    viewBox="0 0 146.32 105.45"
-                    className="absolute -top-1 -right-1 w-10 sm:w-16"
-                >
-                    <path fill="#190e4f" d="M0 0h146.32v105.45L0 0z"></path>
-                </svg>
+            <div className="relative mx-4 sm:w-5/6 2xl:w-2/3" id="email-form">
+                {/* Background */}
+                <div className="h-full w-full flex absolute" id="test-div">
+                    {/* Left side */}
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enableBackground="new 0 0 200 1200"
+                        viewBox="0 0 200 1200"
+                    >
+                        <path
+                            fill="#342b6e"
+                            d="M0 0v1094.2L146.8 1200H200V0z"
+                        ></path>
+                    </svg>
+                    {/* Growing middle div for responsiveness */}
+                    <div className="bg-theme-purple-light grow"></div>
+                    {/* Right side */}
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enableBackground="new 0 0 200 1200"
+                        viewBox="0 0 200 1200"
+                    >
+                        <path
+                            fill="#342b6e"
+                            d="M200 1200V105.8L53.2 0H0v1200z"
+                        ></path>
+                    </svg>
+                </div>
                 <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col items-center"
+                    className="flex flex-col items-center z-10 m-4 p-3"
                 >
                     {/* Name input */}
                     <div className="mb-6 relative w-full">
