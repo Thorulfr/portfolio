@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="flex flex-col items-center">
+        <footer className="flex flex-col items-center pt-5">
             <div className="flex justify-around items-center pt-3 w-3/4 lg:w-1/3">
                 {/* LinkedIn logo + link */}
                 <a
