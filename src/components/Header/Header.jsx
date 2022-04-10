@@ -14,22 +14,26 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/"
                             onClick={() => setCurrentPage('/')}
-                            className={`hover:text-theme-orange transition-all duration-300 ${
+                            className={`${
                                 currentPage === '/' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
-                            {'//About'}
+                            <span className="animated-underline">
+                                {'//About'}
+                            </span>
                         </Link>
                     </li>
                     <li>
                         <Link
                             to="/contact"
                             onClick={() => setCurrentPage('contact')}
-                            className={`hover:text-theme-orange transition-all duration-300 ${
+                            className={`${
                                 currentPage === 'contact' && 'text-theme-pink'
                             }`}
                         >
-                            {'//Contact'}
+                            <span className="animated-underline">
+                                {'//Contact'}
+                            </span>
                         </Link>
                     </li>
                 </ul>
@@ -81,22 +85,26 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/work"
                             onClick={() => setCurrentPage('work')}
-                            className={`hover:text-theme-orange transition-all duration-300 ${
+                            className={`${
                                 currentPage === 'work' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
-                            {'//Work'}
+                            <span className="animated-underline">
+                                {'//Work'}
+                            </span>
                         </Link>
                     </li>
                     <li>
                         <Link
                             to="/resume"
                             onClick={() => setCurrentPage('resume')}
-                            className={`hover:text-theme-orange transition-all duration-300 ${
+                            className={`${
                                 currentPage === 'resume' && 'text-theme-pink'
                             }`}
                         >
-                            {'//Resume'}
+                            <span className="animated-underline">
+                                {'//Resume'}
+                            </span>
                         </Link>
                     </li>
                 </ul>

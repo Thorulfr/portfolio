@@ -3,7 +3,59 @@
 @tailwind utilities;
 
 body {
-    /* font-family: 'Bungee', cursive; */
     font-family: 'Bungee Hairline', cursive;
     font-weight: bold;
+}
+
+.animated-underline {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-underline:hover::after {
+    -webkit-animation: underline 400ms forwards;
+    -moz-animation: underline 400ms forwards;
+    -o-animation: underline 400ms forwards;
+    animation: underline 400ms forwards;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0.55rem;
+    left: 0;
+    width: 0%;
+    height: 0.25rem;
+    background-color: #e83f6f;
+    opacity: 0;
+    transform: skewX(-14deg);
+    transform-origin: left;
+}
+
+/* Animations */
+
+@keyframes underline {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+        width: 100%;
+    }
+    55% {
+        opacity: 0;
+        width: 100%;
+    }
+    70% {
+        opacity: 1;
+        width: 100%;
+    }
+    85% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
 }
