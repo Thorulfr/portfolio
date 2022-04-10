@@ -13,15 +13,8 @@ const Work = ({ setCurrentPage }) => {
         setCurrentPage('work');
     });
 
-    // Calculate height of main container
-    const calculatedContainerHeight =
-        document.documentElement.clientHeight - 232;
-    let mainContainerHeight = calculatedContainerHeight + 'px';
-
     return (
-        <main
-            className={`flex justify-center max-h-[${mainContainerHeight}] overflow-auto`}
-        >
+        <main className="flex justify-center overflow-auto" id="work-container">
             <div className="px-4 text-theme-lilac md:px-12 lg:px-32 xl:px-32 xl:grid xl:grid-cols-2 xl:my-6 2xl:px-60">
                 <div>
                     <Project project={projects.typePlusPlus} />

@@ -7,6 +7,10 @@ body {
     font-weight: bold;
 }
 
+#work-container {
+    max-height: calc(100vh - 232px);
+}
+
 .animated-underline {
     position: relative;
 }
