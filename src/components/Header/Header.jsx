@@ -14,7 +14,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/"
                             onClick={() => setCurrentPage('/')}
-                            className={`${
+                            className={`transition-all duration-300 ${
                                 currentPage === '/' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
@@ -27,7 +27,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/contact"
                             onClick={() => setCurrentPage('contact')}
-                            className={`${
+                            className={`transition-all duration-300 ${
                                 currentPage === 'contact' && 'text-theme-pink'
                             }`}
                         >
@@ -85,7 +85,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/work"
                             onClick={() => setCurrentPage('work')}
-                            className={`${
+                            className={`transition-all duration-300 ${
                                 currentPage === 'work' && 'text-theme-pink'
                             } lg:pr-20`}
                         >
@@ -98,7 +98,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         <Link
                             to="/resume"
                             onClick={() => setCurrentPage('resume')}
-                            className={`${
+                            className={`transition-all duration-300 ${
                                 currentPage === 'resume' && 'text-theme-pink'
                             }`}
                         >

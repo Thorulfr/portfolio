@@ -77,7 +77,7 @@ const Contact = ({ setCurrentPage }) => {
                     You can also reach me directly{' '}
                     <a
                         href="mailto:holt.benjamin.eric@gmail.com"
-                        className="text-theme-pink hover:text-theme-orange transition-all duration-300 ease-in-out"
+                        className="text-theme-pink animated-underline"
                     >
                         via e-mail
                     </a>

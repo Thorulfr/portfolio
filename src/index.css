@@ -9,7 +9,6 @@ body {
 
 .animated-underline {
     position: relative;
-    overflow: hidden;
 }
 
 .animated-underline:hover::after {
@@ -22,10 +21,10 @@ body {
 .animated-underline::after {
     content: '';
     position: absolute;
-    bottom: 0.55rem;
+    bottom: 0.4rem;
     left: 0;
     width: 0%;
-    height: 0.25rem;
+    height: 0.15rem;
     background-color: #e83f6f;
     opacity: 0;
     transform: skewX(-14deg);
@@ -57,5 +56,19 @@ body {
     100% {
         opacity: 1;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .animated-underline::after {
+        bottom: 0.4rem;
+        height: 0.15rem;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .animated-underline::after {
+        bottom: 0.55rem;
+        height: 0.25rem;
     }
 }
