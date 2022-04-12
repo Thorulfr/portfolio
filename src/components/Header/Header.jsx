@@ -40,7 +40,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 {/* Logo */}
                 <div className="flex justify-center items-center">
                     <svg
-                        className="h-20 w-20"
+                        className="h-20 w-20 pulse z-20"
                         xmlns="http://www.w3.org/2000/svg"
                         x="0"
                         y="0"

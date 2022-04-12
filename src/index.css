@@ -41,8 +41,8 @@ body {
     -o-animation: pulse 5s infinite linear;
     animation: pulse 5s infinite linear;
 }
-/* Animations */
 
+/* Animations */
 /* Animated underline */
 @-webkit-keyframes underline {
     0% {
