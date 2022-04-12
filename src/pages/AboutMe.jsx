@@ -16,7 +16,7 @@ const AboutMe = ({ setCurrentPage }) => {
                     className="pb-9 sm:w-2/3 max-h-[50rem] lg:w-3/5 xl:w-1/2 2xl:px-9"
                 ></img>
                 <div className="text-justify sm:px-9">
-                    <p className="text-center text-3xl text-theme-pink md:text-5xl pb-6">
+                    <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
                         Howdy. I'm Ben.
                     </p>
                     <p>

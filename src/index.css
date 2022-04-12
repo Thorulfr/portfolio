@@ -37,6 +37,7 @@ body {
 
 /* Animations */
 
+/* Animated underline */
 @keyframes underline {
     0% {
         opacity: 1;
