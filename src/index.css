@@ -197,6 +197,33 @@ body {
     }
 }
 
+/* @keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    56% {
+        opacity: 1;
+    }
+    57% {
+        opacity: 1;
+    }
+    58% {
+        opacity: 0;
+    }
+    59% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
 /* Scrollbars */
 ::-webkit-scrollbar {
     width: 20px;
