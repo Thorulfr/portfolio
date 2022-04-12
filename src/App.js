@@ -22,45 +22,47 @@ function App() {
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                 />
-                <div className="grow flex">
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={
-                                <AboutMe
-                                    currentPage={currentPage}
-                                    setCurrentPage={setCurrentPage}
-                                />
-                            }
-                        />
-                        <Route
-                            path="/contact"
-                            element={
-                                <Contact
-                                    currentPage={currentPage}
-                                    setCurrentPage={setCurrentPage}
-                                />
-                            }
-                        />
-                        <Route
-                            path="/work"
-                            element={
-                                <Work
-                                    currentPage={currentPage}
-                                    setCurrentPage={setCurrentPage}
-                                />
-                            }
-                        />
-                        <Route
-                            path="/resume"
-                            element={
-                                <Resume
-                                    currentPage={currentPage}
-                                    setCurrentPage={setCurrentPage}
-                                />
-                            }
-                        />
-                    </Routes>
+                <div className="grow flex overflow-auto overflow-container">
+                    <div className="">
+                        <Routes>
+                            <Route
+                                path="/"
+                                element={
+                                    <AboutMe
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                    />
+                                }
+                            />
+                            <Route
+                                path="/contact"
+                                element={
+                                    <Contact
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                    />
+                                }
+                            />
+                            <Route
+                                path="/work"
+                                element={
+                                    <Work
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                    />
+                                }
+                            />
+                            <Route
+                                path="/resume"
+                                element={
+                                    <Resume
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                    />
+                                }
+                            />
+                        </Routes>
+                    </div>
                 </div>
                 <Footer />
             </div>

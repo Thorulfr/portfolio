@@ -14,7 +14,7 @@ const Work = ({ setCurrentPage }) => {
     });
 
     return (
-        <main className="flex justify-center overflow-auto" id="work-container">
+        <main className="flex justify-center">
             <div className="px-4 text-theme-lilac md:px-12 lg:px-32 xl:px-32 xl:grid xl:grid-cols-2 xl:my-6 2xl:px-60">
                 <div>
                     <Project project={projects.typePlusPlus} />
