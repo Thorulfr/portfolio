@@ -35,9 +35,93 @@ body {
     transform-origin: left;
 }
 
+.pulse {
+    -webkit-animation: pulse 5s infinite linear;
+    -moz-animation: pulse 5s infinite linear;
+    -o-animation: pulse 5s infinite linear;
+    animation: pulse 5s infinite linear;
+}
 /* Animations */
 
 /* Animated underline */
+@-webkit-keyframes underline {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+        width: 100%;
+    }
+    55% {
+        opacity: 0;
+        width: 100%;
+    }
+    70% {
+        opacity: 1;
+        width: 100%;
+    }
+    85% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@-moz-keyframes underline {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+        width: 100%;
+    }
+    55% {
+        opacity: 0;
+        width: 100%;
+    }
+    70% {
+        opacity: 1;
+        width: 100%;
+    }
+    85% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@-o-keyframes underline {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+        width: 100%;
+    }
+    55% {
+        opacity: 0;
+        width: 100%;
+    }
+    70% {
+        opacity: 1;
+        width: 100%;
+    }
+    85% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
 @keyframes underline {
     0% {
         opacity: 1;
@@ -61,6 +145,55 @@ body {
     100% {
         opacity: 1;
         width: 100%;
+    }
+}
+
+/* Logo Pulse */
+@-webkit-keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+    10% {
+        filter: drop-shadow(0px 0px 20px rgba(232, 63, 111, 0.5));
+    }
+    30% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+    10% {
+        filter: drop-shadow(0px 0px 20px rgba(232, 63, 111, 0.5));
+    }
+    30% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+}
+
+@-o-keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+    10% {
+        filter: drop-shadow(0px 0px 20px rgba(232, 63, 111, 0.5));
+    }
+    30% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+}
+
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
+    }
+    10% {
+        filter: drop-shadow(0px 0px 20px rgba(232, 63, 111, 0.5));
+    }
+    30% {
+        filter: drop-shadow(0px 0px 0px rgba(232, 63, 111, 0.5));
     }
 }
 
