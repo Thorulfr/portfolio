@@ -8,8 +8,8 @@ const AboutMe = ({ setCurrentPage }) => {
     });
 
     return (
-        <main className="flex text-theme-lilac items-center justify-center">
-            <div className="flex flex-col p-6 items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
+        <main className="flex text-theme-lilac items-center justify-center ">
+            <div className="flex flex-col p-6 overflow-auto overflow-container items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
                 <img
                     src="./assets/images/self-portrait.png"
                     alt="Benjamin in a lava field in northern Iceland"
