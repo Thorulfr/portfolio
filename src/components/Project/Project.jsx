@@ -9,11 +9,12 @@ function Project(project) {
                 {project.project.name}
             </span>
             {/* Project screenshot */}
-            <div className="m-3 sm:w-5/6">
+            <div className="image relative m-3 sm:w-5/6">
                 <img
                     src={project.project.imagePath}
                     alt="Application screenshot"
                 />
+                <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
             </div>
             {/* Project description */}
             <p className="text-center">{project.project.description}</p>
