@@ -13,7 +13,7 @@ body {
 
 .clip-triangle {
     clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
-    animation: clip-triangle-reverse 400ms;
+    animation: clip-triangle-reverse 200ms;
 }
 
 .image:hover > .clip-triangle {
