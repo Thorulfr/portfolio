@@ -11,6 +11,14 @@ body {
     max-height: calc(100vh - 300px);
 }
 
+.clip-triangle {
+    clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+}
+
+.image:hover > .clip-triangle {
+    clip-path: polygon(0% 28%, 0% 100%, 100% 100%);
+}
+
 .animated-underline {
     position: relative;
 }
