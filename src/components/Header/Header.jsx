@@ -11,7 +11,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         xmlns="http://www.w3.org/2000/svg"
                         data-name="Layer 1"
                         viewBox="0 0 172.01 302.03"
-                        className="h-12"
+                        className="h-12 z-20 pulse-2"
                     >
                         <path
                             fill="#e83f6f"
@@ -126,7 +126,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         xmlns="http://www.w3.org/2000/svg"
                         data-name="Layer 1"
                         viewBox="0 0 172.01 302.03"
-                        className="h-12"
+                        className="h-12 z-20 pulse-2"
                     >
                         <path
                             fill="#e83f6f"
