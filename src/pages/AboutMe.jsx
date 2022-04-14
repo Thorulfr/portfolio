@@ -9,15 +9,15 @@ const AboutMe = ({ setCurrentPage }) => {
 
     return (
         <main className="flex text-theme-lilac items-center justify-center ">
-            <div className="flex flex-col p-6 overflow-auto overflow-container items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
+            <div className="flex flex-col p-6 overflow-auto overflow-container justify-center items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
                 {/* Self-photo */}
-                <div className="image relative sm:w-2/3 max-h-[50rem] lg:w-3/5 xl:w-1/2">
+                <div className="image relative max-h-[50rem] sm:w-2/3 lg:w-3/5 xl:w-1/2 2xl:w-1/3">
                     <img
                         src="./assets/images/self-portrait.png"
                         alt="Benjamin in a lava field in northern Iceland"
-                        className=""
+                        className="w-fit"
                     ></img>
-                    <div className="absolute bottom-0 left-0 h-[11.75rem] w-[11.75rem] clip-triangle bg-theme-pink transition-all duration-150"></div>
+                    <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
                 </div>
                 {/* Biography */}
                 <div className="text-justify pt-9 sm:px-9 2xl:w-1/2 2xl:pt-0 2xl:px-0 2xl:pl-20 ">
