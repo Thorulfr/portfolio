@@ -13,10 +13,11 @@ body {
 
 .clip-triangle {
     clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+    animation: clip-triangle-reverse 400ms;
 }
 
 .image:hover > .clip-triangle {
-    clip-path: polygon(0% 28%, 0% 100%, 100% 100%);
+    animation: clip-triangle 400ms forwards;
 }
 
 .animated-underline {
@@ -49,6 +50,36 @@ body {
 }
 
 /* Animations */
+@keyframes clip-triangle {
+    0% {
+    }
+    40% {
+        clip-path: polygon(0% 28%, 0% 100%, 100% 100%);
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        clip-path: polygon(0% 28%, 0% 100%, 100% 100%);
+    }
+}
+
+@keyframes clip-triangle-reverse {
+    0% {
+        clip-path: polygon(0% 28%, 0% 100%, 100% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+    }
+}
 /* Animated underline */
 @keyframes underline {
     0% {
@@ -116,6 +147,7 @@ body {
     }
 }
 
+/* Pulse animation with offset timing */
 @keyframes pulse-2 {
     0% {
         opacity: 1;

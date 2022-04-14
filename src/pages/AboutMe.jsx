@@ -19,6 +19,7 @@ const AboutMe = ({ setCurrentPage }) => {
                     ></img>
                     <div className="absolute bottom-0 left-9 h-[10.5rem] w-[10.5rem] clip-triangle bg-theme-pink transition-all duration-150"></div>
                 </div>
+                {/* Biography */}
                 <div className="text-justify sm:px-9 2xl:w-1/2">
                     <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
                         Howdy. I'm Ben.
