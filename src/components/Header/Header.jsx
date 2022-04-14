@@ -6,9 +6,22 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="nav-header" className="pt-6 pb-3">
             <nav className="w-full flex justify-center sm:text-xl md:text-2xl xl:text-3xl">
+                <div className="hidden items-end pr-4 sm:flex lg:pr-6">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-name="Layer 1"
+                        viewBox="0 0 172.01 302.03"
+                        className="h-12"
+                    >
+                        <path
+                            fill="#e83f6f"
+                            d="M172.01 302.03H146.8L0 196.23V0h15v188.87l157.01 113.16z"
+                        ></path>
+                    </svg>
+                </div>
                 <ul
                     id="nav-list"
-                    className="flex flex-col grow justify-evenly pr-4 text-right text-theme-lilac sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
+                    className="flex flex-col justify-evenly pr-6 text-right text-theme-lilac sm:pr-12 lg:pr-20 lg:flex-row lg:items-center lg:justify-end"
                 >
                     <li>
                         <Link
@@ -40,47 +53,47 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 {/* Logo */}
                 <div className="flex justify-center items-center">
                     <svg
-                        className="h-20 w-20 pulse z-20"
+                        className="h-16 pulse z-20"
                         xmlns="http://www.w3.org/2000/svg"
                         x="0"
                         y="0"
-                        enableBackground="new 0 0 512 512"
+                        enableBackground="new 0 0 400 400"
                         version="1.1"
-                        viewBox="0 0 512 512"
+                        viewBox="0 0 400 400"
                         xmlSpace="preserve"
                     >
                         <path
                             fill="#e83f6f"
-                            d="M456 161.8V456H202.8L56 350.2V56h253.2z"
+                            d="M400 105.8V400H146.8L0 294.2V0h253.2L400 105.8z"
                         ></path>
                         <g>
                             <g>
                                 <path
+                                    d="M251.6 92.4H148.4v188.9l.5-.4 49.2-47.1-49.2-46.9"
                                     fill="none"
                                     stroke="#190e4f"
                                     strokeWidth="17.5"
                                     strokeMiterlimit="10"
-                                    d="M307.6 148.4H204.4v188.9l.5-.4 49.2-47.1-49.2-46.9"
                                 ></path>
                                 <path
+                                    d="M242.7 344.4v-159H149"
                                     fill="none"
                                     stroke="#190e4f"
                                     strokeWidth="17.5"
                                     strokeMiterlimit="10"
-                                    d="M298.7 400.4v-159H205"
                                 ></path>
                                 <path
+                                    d="M148.8 185.9l47.2-47.2-47.2-47.1m0 94.4l93.3 90.3"
                                     fill="none"
                                     stroke="#190e4f"
                                     strokeWidth="17.5"
                                     strokeMiterlimit="10"
-                                    d="M204.8 241.9l47.2-47.2-47.2-47.1m0 94.4l93.3 90.3"
                                 ></path>
                             </g>
                         </g>
                     </svg>
                 </div>
-                <ul className="flex flex-col grow justify-evenly pl-4 text-left text-theme-lilac sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
+                <ul className="flex flex-col justify-evenly pl-6 text-left text-theme-lilac sm:pl-12 lg:pl-20 lg:flex-row lg:items-center lg:justify-start">
                     <li>
                         <Link
                             to="/work"
@@ -108,6 +121,19 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         </Link>
                     </li>
                 </ul>
+                <div className="hidden items-start pl-2 sm:flex lg:pl-6">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-name="Layer 1"
+                        viewBox="0 0 172.01 302.03"
+                        className="h-12"
+                    >
+                        <path
+                            fill="#e83f6f"
+                            d="M0 0h25.21l146.8 105.8v196.23h-15V113.16L0 0z"
+                        ></path>
+                    </svg>
+                </div>
             </nav>
         </header>
     );

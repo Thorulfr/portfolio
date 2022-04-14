@@ -22,7 +22,7 @@ function App() {
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                 />
-                <div className="grow flex">
+                <div className="grow flex overflow-auto overflow-container">
                     <div className="flex grow">
                         <Routes>
                             <Route
