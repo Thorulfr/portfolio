@@ -9,7 +9,7 @@ const AboutMe = ({ setCurrentPage }) => {
 
     return (
         <main className="flex text-theme-lilac items-center justify-center ">
-            <div className="flex flex-col p-6 justify-center items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
+            <div className="flex flex-col p-6  justify-center items-center md:text-lg 2xl:flex-row 2xl:max-w-[85%]">
                 {/* Self-photo */}
                 <div className="image relative max-h-[50rem] sm:w-2/3 lg:w-3/5 xl:w-1/2 2xl:w-1/3">
                     <img
