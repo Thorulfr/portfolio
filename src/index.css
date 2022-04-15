@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-    height: 100%;
-    display: flex;
-}
-
 body {
     font-family: 'Bungee Hairline', cursive;
     font-weight: bold;
-    height: 100vh;
+}
+
+.overflow-container {
+    max-height: calc(100vh - 300px);
 }
 
 .clip-triangle {
