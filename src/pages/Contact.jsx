@@ -29,8 +29,14 @@ const Contact = ({ setCurrentPage }) => {
             document.getElementById('messageInput').checkValidity()
         ) {
             document.getElementById('contact-submit-button').disabled = false;
+            document
+                .getElementById('contact-submit-button-text')
+                .classList.add('animated-underline');
         } else {
             document.getElementById('contact-submit-button').disabled = true;
+            document
+                .getElementById('contact-submit-button-text')
+                .classList.remove('animated-underline');
         }
     }
 
@@ -40,8 +46,8 @@ const Contact = ({ setCurrentPage }) => {
         // Disable button after submission
         document.getElementById('contact-submit-button').disabled = true;
         document
-            .getElementById('contact-submit-button')
-            .classList.remove('hover:text-theme-orange', 'hover:shadow-lg');
+            .getElementById('contact-submit-button-text')
+            .classList.remove('animated-underline');
         // API endpoint for AWS SES
         const endpoint =
             'https://m29d885kl7.execute-api.us-east-1.amazonaws.com/default/send-contact-form-email';
@@ -243,12 +249,7 @@ const Contact = ({ setCurrentPage }) => {
                         disabled
                         className="w-2/3 px-6 py-2.5 relative bg-theme-purple text-theme-pink font-black shadow disabled:hover:shadow-none disabled:text-theme-lilac focus:outline-none transition duration-300 ease-in-out 2xl:w-1/2"
                     >
-                        <span
-                            id="contact-submit-button-text"
-                            className="animated-underline"
-                        >
-                            Submit
-                        </span>
+                        <span id="contact-submit-button-text">Submit</span>
                         {/* Bottom-left frame */}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
