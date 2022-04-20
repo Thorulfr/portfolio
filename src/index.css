@@ -13,15 +13,6 @@ body {
     font-weight: bold;
 }
 
-.clip-triangle {
-    clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
-    animation: clip-triangle-reverse 200ms;
-}
-
-.image:hover > .clip-triangle {
-    animation: clip-triangle 400ms forwards;
-}
-
 .animated-underline {
     position: relative;
 }
@@ -41,6 +32,15 @@ body {
     opacity: 0;
     transform: skewX(-14deg);
     transform-origin: left;
+}
+
+.clip-triangle {
+    clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+    animation: clip-triangle-reverse 200ms;
+}
+
+.image:hover > .clip-triangle {
+    animation: clip-triangle 400ms forwards;
 }
 
 .pulse {
@@ -189,7 +189,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: #e83f6f;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: 6px solid transparent;
     background-clip: content-box;
 }
