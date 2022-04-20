@@ -1,9 +1,6 @@
 // Imports
 import React, { useEffect, useState, setState } from 'react';
 
-// Utility imports
-import validator from 'validator';
-
 const Contact = ({ setCurrentPage }) => {
     // Set current page in header/nav
     useEffect(() => {
