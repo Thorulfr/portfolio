@@ -6,7 +6,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="header" className="pt-6 pb-3">
             <nav className="w-full flex justify-center sm:text-xl md:text-2xl xl:text-3xl">
-                <div className="hidden items-end pr-4 sm:flex lg:pr-6">
+                <div className="items-end pr-2 sm:pr-4 flex lg:pr-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         data-name="Layer 1"
@@ -121,7 +121,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         </Link>
                     </li>
                 </ul>
-                <div className="hidden items-start pl-2 sm:flex lg:pl-6">
+                <div className="items-start pl-2 flex lg:pl-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         data-name="Layer 1"
