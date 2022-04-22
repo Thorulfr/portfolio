@@ -82,16 +82,19 @@ const Contact = ({ setCurrentPage }) => {
     return (
         <main className="grow text-theme-lilac px-4 flex flex-col items-center justify-center md:px-12 lg:px-32 lg:text-xl 2xl:px-52">
             <div className="mx-4 my-10 flex justify-center sm:w-5/6 2xl:w-2/3">
+                {/* Contact text and email */}
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
                     I'll get back to you ASAP! <br /> <br />
-                    You can also reach me directly{' '}
+                    You can also reach me directly at{' '}
                     <a
                         href="mailto:holt.benjamin.eric@gmail.com"
                         className="text-theme-pink animated-underline"
+                        target="_blank"
+                        rel="noreferrer"
                     >
-                        via e-mail
+                        holt.benjamin.eric@gmail.com
                     </a>
                     .
                 </p>
