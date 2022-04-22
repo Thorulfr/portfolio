@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ currentPage, setCurrentPage }) => {
     return (
-        <header id="header" className="pt-6 pb-3">
+        <header id="header" className="py-6">
             <nav className="w-full flex justify-center sm:text-xl md:text-2xl xl:text-3xl">
                 <div className="items-end pr-2 sm:pr-4 flex lg:pr-6">
                     <svg
