@@ -6,6 +6,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="header" className="py-6">
             <nav className="w-full flex justify-center sm:text-xl md:text-2xl xl:text-3xl">
+                {/* Left bracket */}
                 <div className="items-end pr-2 sm:pr-4 flex lg:pr-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +122,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                         </Link>
                     </li>
                 </ul>
+                {/* Right bracket */}
                 <div className="items-start pl-2 flex lg:pl-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
