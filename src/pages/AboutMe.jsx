@@ -18,8 +18,8 @@ const AboutMe = ({ setCurrentPage }) => {
                     ></img>
                     <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
                 </div>
+                {/* Biography */}
                 <div className="text-justify pt-9 sm:px-9 2xl:w-1/2 2xl:pt-0 2xl:px-0 2xl:pl-20 ">
-                    {/* Biography */}
                     <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
                         Howdy. I'm Ben.
                     </p>
@@ -37,14 +37,20 @@ const AboutMe = ({ setCurrentPage }) => {
                         application – and want to{' '}
                         <span className="italic">keep</span> using it!
                     </p>
+                </div>
+                {/* Proficiencies */}
+                <div className="text-justify pt-9 sm:px-9 2xl:w-1/2 2xl:pt-0 2xl:px-0 2xl:pl-20 ">
+                    <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
+                        I'm proficient in:
+                    </p>
                     {/* Proficiency SVGs */}
-                    <div className="flex">
+                    <div className="flex flex-wrap">
                         {/* JavaScript */}
                         <div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 630 630"
-                                className="h-12"
+                                className="h-16"
                             >
                                 <path fill="#f7df1e" d="M0 0h630v630H0z"></path>
                                 <path d="M423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"></path>
@@ -53,7 +59,7 @@ const AboutMe = ({ setCurrentPage }) => {
                         {/* HTML5 */}
                         <div>
                             {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
-                            <svg viewBox="0 0 452 520" className="h-12">
+                            <svg viewBox="0 0 452 520" className="h-16">
                                 <title>HTML5 Logo Badge</title>
                                 <path
                                     fill="RGB(227,79,38)"
@@ -76,7 +82,7 @@ const AboutMe = ({ setCurrentPage }) => {
                         {/* CSS3 */}
                         <div>
                             {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
-                            <svg viewBox="0 0 452 520" className="h-12">
+                            <svg viewBox="0 0 452 520" className="h-16">
                                 <title>CSS3 Logo Badge</title>
                                 <path
                                     fill="RGB(12,115,184)"
@@ -103,7 +109,7 @@ const AboutMe = ({ setCurrentPage }) => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
                                 viewBox="0 0 91.89 91.89"
-                                className="h-12"
+                                className="h-16"
                             >
                                 <path
                                     fill="#f05133"
@@ -117,7 +123,7 @@ const AboutMe = ({ setCurrentPage }) => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
                                 viewBox="0 0 120 257"
-                                className="h-12"
+                                className="h-16"
                             >
                                 <path
                                     fill="#001e2b"
@@ -131,7 +137,7 @@ const AboutMe = ({ setCurrentPage }) => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
                                 viewBox="0 0 490.6 436.9"
-                                className="h-12"
+                                className="h-16"
                             >
                                 <path
                                     fill="#61dafb"
@@ -152,7 +158,7 @@ const AboutMe = ({ setCurrentPage }) => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
                                 viewBox="0 0 256 289"
-                                className="h-12"
+                                className="h-16"
                             >
                                 <path
                                     fill="#539e43"
