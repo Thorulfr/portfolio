@@ -24,35 +24,18 @@ const AboutMe = ({ setCurrentPage }) => {
                         Howdy. I'm Ben.
                     </p>
                     <p>
-                        I'm a full-stack web developer with a thirst for
-                        crafting pleasing user experiences. I earned my
-                        development certificate through the University of Utah's
-                        full-stack bootcamp. Though full-time devotion to web
-                        development and design is a recent development, my
-                        passion for coding and design hearkens back to time
-                        spent building Geocities pages and making Flash
-                        animations as an early teen. I am particularly
-                        passionate about front-end development and savor the
-                        challenges and rewards of creating applications that are
-                        unique and visually enticing. My goal is to provide
-                        engaging experiences that allow people to{' '}
-                        <span className="italic">enjoy</span> an application.
-                    </p>
-                    <p className="pt-4">
-                        My education includes an undergraduate degree in German
-                        Literature and Linguistics and a Master of Arts degree
-                        from the University of Iceland in comparative historical
-                        linguistics and network analysis as applied to Swedish
-                        and Danish runic inscriptions. I've been a
-                        linguistics-nut since about the age of 13, when I first
-                        started studying German. I also am an avid fan of
-                        guitar, synthesizer, keyboard-building, and all things
-                        80s!
+                        I'm a full-stack web developer with a passion for
+                        intuitive and responsive design, the marriage of form
+                        and function, and logic-grounded problem-solving.
                     </p>
                     <p className="py-4">
-                        Also, my degree officially bestows upon me the title
-                        'Nordic Master of Viking and Medieval Norse Studies'.
-                        Ask me about it!
+                        I'm particularly enthusiastic about front-end
+                        development and savor the challenges and rewards of
+                        creating applications that are unique and visually
+                        enticing. My aim is to provide engaging experiences that
+                        help people <span className="italic">enjoy</span> an
+                        application – and want to{' '}
+                        <span className="italic">keep</span> using it!
                     </p>
                 </div>
             </div>
