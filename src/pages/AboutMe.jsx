@@ -1,7 +1,8 @@
 // Imports
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const AboutMe = ({ setCurrentPage }) => {
+const AboutMe = ({ currentPage, setCurrentPage }) => {
     // Set current page in header/nav
     useEffect(() => {
         setCurrentPage('/');
@@ -39,7 +40,7 @@ const AboutMe = ({ setCurrentPage }) => {
                     </p>
                 </div>
                 {/* Proficiencies */}
-                <div className="text-justify pt-9 sm:px-9 2xl:w-1/2 2xl:pt-0 2xl:px-0 2xl:pl-20 ">
+                <div className="flex flex-col items-center justify-center pt-9 sm:px-9 2xl:w-1/2 2xl:pt-0 2xl:px-0 2xl:pl-20 ">
                     <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
                         I'm proficient in:
                     </p>
@@ -154,7 +155,6 @@ const AboutMe = ({ setCurrentPage }) => {
                         </div>
                         {/* Node.js */}
                         <div className="px-4 pb-6">
-                            {' '}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
@@ -167,6 +167,19 @@ const AboutMe = ({ setCurrentPage }) => {
                                 ></path>
                             </svg>
                         </div>
+                    </div>
+                    <div>
+                        <Link
+                            to="/resume"
+                            onClick={() => setCurrentPage('resume')}
+                            className={`transition-all duration-300 ${
+                                currentPage === 'resume' && 'text-theme-pink'
+                            }`}
+                        >
+                            <span className="animated-underline">
+                                ...and more!
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </div>
