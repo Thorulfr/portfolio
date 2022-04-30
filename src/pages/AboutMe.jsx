@@ -44,9 +44,9 @@ const AboutMe = ({ setCurrentPage }) => {
                         I'm proficient in:
                     </p>
                     {/* Proficiency SVGs */}
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap items-center justify-center">
                         {/* JavaScript */}
-                        <div>
+                        <div className="px-4 pb-6">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 630 630"
@@ -60,7 +60,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* HTML5 */}
-                        <div>
+                        <div className="px-4 pb-6">
                             {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* CSS3 */}
-                        <div>
+                        <div className="px-4 pb-6">
                             {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* Git */}
-                        <div>
+                        <div className="px-4 pb-6">
                             {/* Original by Jason Long: https://git-scm.com/downloads/logos */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* MongoDB */}
-                        <div>
+                        <div className="px-4 pb-6">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
@@ -133,7 +133,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* React */}
-                        <div>
+                        <div className="px-4 pb-6">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 data-name="Layer 1"
@@ -153,7 +153,7 @@ const AboutMe = ({ setCurrentPage }) => {
                             </svg>
                         </div>
                         {/* Node.js */}
-                        <div>
+                        <div className="px-4 pb-6">
                             {' '}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
