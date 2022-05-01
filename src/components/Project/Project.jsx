@@ -8,6 +8,8 @@ function Project(project) {
             <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl xl:text-2xl">
                 {project.project.name}
             </span>
+            {/* Project description */}
+            <p className="text-center">{project.project.description}</p>
             {/* Project screenshot */}
             <div className="image relative m-3 sm:w-5/6">
                 <img
@@ -16,8 +18,24 @@ function Project(project) {
                 />
                 <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
             </div>
-            {/* Project description */}
-            <p className="text-center">{project.project.description}</p>
+            <div className="text-justify text-sm">
+                <p>
+                    <span className="text-theme-pink">
+                        {project.project.name}{' '}
+                    </span>
+                    {project.project.fullDescription}
+                </p>
+                <p>
+                    <span className="text-theme-pink">Built with</span>{' '}
+                    {project.project.stack}.
+                </p>
+                <p>
+                    <span className="text-theme-pink">
+                        I was responsible for
+                    </span>{' '}
+                    {project.project.role}.
+                </p>
+            </div>
             <div className="w-1/2 flex justify-evenly items-center p-1 mb-1">
                 {/* Github logo + link */}
                 <a
