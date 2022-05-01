@@ -44,13 +44,13 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                     </div>
                     {/* Proficiencies */}
                     <div className="flex flex-col items-center justify-center">
-                        <p className="text-center text-3xl text-theme-pink pb-6 md:text-5xl">
+                        <p className="text-center text-3xl text-theme-pink py-6 md:text-5xl">
                             I'm proficient in:
                         </p>
                         {/* Proficiency SVGs */}
                         <div className="flex flex-wrap items-center justify-center">
                             {/* JavaScript */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 630 630"
@@ -65,9 +65,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">JavaScript</span>
                             </div>
                             {/* HTML5 */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -87,9 +88,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M362 150H146l5 58h206l-16 174-115 32-117-32-7-89h56l4 45 64 17 62-17 7-73H99L84 94h283l-5 56z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">HTML5</span>
                             </div>
                             {/* CSS3 */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 {/* Original by Aidan Dunn: https://codepen.io/aidandunn/pen/QWqRya */}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -109,9 +111,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M367 94l-26 288-115 32-117-32-7-60 124 33 62-17 7-73H99l-5-57h206l6-58H89l-5-56h283z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">CSS3</span>
                             </div>
                             {/* Git */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 {/* Original by Jason Long: https://git-scm.com/downloads/logos */}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +127,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M90.15 41.85L50 1.73a5.92 5.92 0 00-8.37 0l-8.33 8.33 10.6 10.57a7 7 0 018.9 9L63 39.78a7 7 0 11-4.22 4l-9.5-9.5v25a7.26 7.26 0 011.86 1.34 7 7 0 11-10 0A6.94 6.94 0 0143.48 59V33.81a6.79 6.79 0 01-2.3-1.54 7 7 0 01-1.52-7.69L29.24 14.16 1.73 41.66a5.93 5.93 0 000 8.38l40.12 40.11a5.92 5.92 0 008.37 0l39.93-39.93a5.9 5.9 0 000-8.37z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">Git</span>
                             </div>
                             {/* MongoDB */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     data-name="Layer 1"
@@ -138,9 +142,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M82.32 28.64C71.54 15.85 62.25 2.85 60.35.15a.48.48 0 00-.7 0c-1.9 2.7-11.18 15.7-22 28.49-92.55 118.08 14.61 197.77 14.61 197.77l.9.6C54 239.3 56 257 56 257h8s2-17.6 2.79-30l.9-.7c.05.11 107.21-79.58 14.63-197.66zM60 224.61s-4.79-4.1-6.09-6.2v-.2l5.74-128.58a.3.3 0 01.6 0L66 218.21v.2c-1.25 2.1-6 6.2-6 6.2z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">MongoDB</span>
                             </div>
                             {/* React */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     data-name="Layer 1"
@@ -158,9 +163,10 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         fill="#E83F6F"
                                     ></circle>
                                 </svg>
+                                <span className="text-xs pt-1">React</span>
                             </div>
                             {/* Node.js */}
-                            <div className="px-4 pb-6">
+                            <div className="flex flex-col items-center justify-center px-4 pb-6">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     data-name="Layer 1"
@@ -172,6 +178,7 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                         d="M128 288.46a23.26 23.26 0 01-11.13-2.91l-35.25-20.94c-5.3-2.91-2.65-4-1.06-4.5 7.16-2.39 8.48-2.92 15.9-7.16a2.44 2.44 0 012.65.27l27 16.16a3.39 3.39 0 003.19 0l105.73-61.21a3 3 0 001.59-2.92V83.08a3 3 0 00-1.59-2.91l-105.73-61a3.39 3.39 0 00-3.19 0l-105.73 61a3.32 3.32 0 00-1.59 2.91v122.17a3.33 3.33 0 001.59 2.92l28.88 16.69c15.64 7.95 25.44-1.32 25.44-10.6V93.68a3.23 3.23 0 013.18-3.18h13.55a3.23 3.23 0 013.18 3.18v120.58c0 20.94-11.4 33.13-31.27 33.13-6.1 0-10.87 0-24.38-6.63l-27.83-15.9A22.35 22.35 0 010 205.52V83.35A22.38 22.38 0 0111.13 64L116.87 2.78a23.65 23.65 0 0122.26 0L244.87 64A22.38 22.38 0 01256 83.35v122.17a22.35 22.35 0 01-11.13 19.34l-105.74 61.22a27.1 27.1 0 01-11.13 2.38zm32.6-84c-46.38 0-55.92-21.21-55.92-39.23a3.22 3.22 0 013.18-3.18h13.78a2.72 2.72 0 012.91 2.65c2.12 14.05 8.22 20.94 36.31 20.94 22.26 0 31.8-5 31.8-17 0-6.89-2.65-11.93-37.36-15.37-28.89-2.92-46.91-9.28-46.91-32.33 0-21.47 18-34.19 48.23-34.19 33.92 0 50.62 11.66 52.74 37.1a4.3 4.3 0 01-.8 2.39 3.26 3.26 0 01-2.12 1.06h-13.78a3.1 3.1 0 01-2.91-2.39c-3.18-14.57-11.4-19.34-33.13-19.34-24.38 0-27.29 8.48-27.29 14.84 0 7.68 3.44 10.07 36.3 14.31 32.6 4.24 48 10.33 48 33.12-.27 23.32-19.35 36.58-53 36.58z"
                                     ></path>
                                 </svg>
+                                <span className="text-xs pt-1">Node.js</span>
                             </div>
                         </div>
                         {/* Link to resume with more proficiencies */}
@@ -184,7 +191,7 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                     'text-theme-pink'
                                 }`}
                             >
-                                <span className="animated-underline">
+                                <span className="animated-underline pb-1">
                                     ...and more!
                                 </span>
                             </Link>
