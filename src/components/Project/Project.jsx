@@ -3,7 +3,7 @@ import React from 'react';
 
 function Project(project) {
     return (
-        <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-10 2xl:px-20">
+        <div className="m-2 rounded-lg grow flex flex-col justify-around items-center xl:px-10 2xl:px-20">
             {/* Project name */}
             <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl xl:text-2xl">
                 {project.project.name}
@@ -18,14 +18,14 @@ function Project(project) {
                 />
                 <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
             </div>
-            <div className="text-justify text-sm">
+            <div className="text-justify text-sm grow">
                 <p>
                     <span className="text-theme-pink">
                         {project.project.name}{' '}
                     </span>
-                    {project.project.fullDescription}
+                    {project.project.fullDescription}.
                 </p>
-                <p>
+                <p className="py-1.5">
                     <span className="text-theme-pink">Built with</span>{' '}
                     {project.project.stack}.
                 </p>

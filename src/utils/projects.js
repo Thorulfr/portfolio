@@ -30,10 +30,12 @@ const budgetTracker = new Project(
 const numberOneFan = new Project(
     'No. 1 Fan',
     'Full-stack music app',
-    '',
+    'is a one-stop shop for music lovers to discover and preview new music, save favorite artists and albums, find upcoming concerts for both favorite bands and venues, and catalogue attended concerts',
     'https://github.com/Thorulfr/no1fan',
     'https://no1fan.herokuapp.com/',
-    './assets/screenshots/no-1-fan-screenshot.png'
+    './assets/screenshots/no-1-fan-screenshot.png',
+    'JavaScript, HTML, CSS, TailwindCSS, Handlebars, Sequelize, MySQL2, Express.js, BCrypt, and Moment.js ',
+    'testing and connecting cross-API calls, planning and implementing the SQL database, wire-framing, and managing and directing team-wide design decisions'
 );
 
 const socialNetworkAPI = new Project(
@@ -57,12 +59,12 @@ const streamability = new Project(
 const typePlusPlus = new Project(
     'Type++',
     'MERN-stack typing hub',
-    "is a competitive type-racing application that allows you to test your typing speed and compete both globally and with friends. As you play more and improve your speed and accuracy, you'll level up and earn badges to show off your skills.",
+    "is a competitive type-racing application that allows you to test your typing speed and compete both globally and with friends. As you play more and improve your speed and accuracy, you'll level up and earn badges to show off your skills",
     'https://github.com/Thorulfr/type-Plus-Plus',
     'https://typeplusplus.herokuapp.com/',
     './assets/screenshots/type-plus-plus-screenshot.png',
     'MongoDB, Express.js, React, Node.js, Javascript, HTML, CSS, React Router, GraphQL, JWT, TailwindCSS, and Chart.js',
-    ''
+    'the front-end, UI and UX design and implementation, site layout and construction, and documentation'
 );
 
 const weatherDashboard = new Project(
