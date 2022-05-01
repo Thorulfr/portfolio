@@ -180,20 +180,6 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                 </svg>
                                 <span className="text-xs pt-1">Node.js</span>
                             </div>
-                            {/* TailwindCSS */}
-                            <div className="flex flex-col items-center justify-center w-28 px-4 pb-6">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 918 918"
-                                    className="h-16"
-                                >
-                                    <path
-                                        fill="#9F9FED"
-                                        d="M449 183.57c-161.5 5.13-209.5 120.5-220.5 183 14.33-23.17 59.5-74 126-74 77.5 0 136.5 86.5 172.5 113.5 43.74 32.8 131.62 76.11 247 41 92-28 134.67-125.67 144-172-44.5 60.5-112 96.84-195.5 54-57.5-29.5-100.5-151-273.5-145.5zm-228.5 274.5C59 463.2 11 578.57 0 641.07c14.33-23.17 59.5-74 126-74 77.5 0 136.5 86.5 172.5 113.5 43.74 32.8 131.62 76.11 247 41 92-28 134.67-125.67 144-172-44.5 60.5-112 96.84-195.5 54-57.5-29.5-100.5-151-273.5-145.5z"
-                                    ></path>
-                                </svg>
-                                <span className="text-xs pt-1">Tailwind</span>
-                            </div>
                             {/* GraphQL */}
                             <div className="flex flex-col items-center justify-center w-28 px-4 pb-6">
                                 <svg
