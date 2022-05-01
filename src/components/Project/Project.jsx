@@ -18,7 +18,7 @@ function Project(project) {
                 />
                 <div className="absolute bottom-0 left-0 h-[27.5%] w-[26.35%] clip-triangle bg-theme-pink transition-all duration-150 z-20"></div>
             </div>
-            <div className="text-justify text-sm grow">
+            <div className="text-justify text-sm grow pt-1">
                 <p>
                     <span className="text-theme-pink">
                         {project.project.name}{' '}

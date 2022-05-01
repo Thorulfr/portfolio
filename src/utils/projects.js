@@ -50,10 +50,12 @@ const socialNetworkAPI = new Project(
 const streamability = new Project(
     'Streamability',
     'Full-stack streaming amalgamator',
-    '',
+    'is an easy-to-use streaming amalgamation application, offering users title information about any given tv-show or film including summaries, release years, ratings, similar title suggestions, and – most importantly – where a title can be streamed. Users can also build queues of titles to watch across all streaming platforms, not just one',
     'https://github.com/Thorulfr/Streamability',
     'https://streamability.herokuapp.com/',
-    './assets/screenshots/streamability-screenshot.png'
+    './assets/screenshots/streamability-screenshot.png',
+    "JavaScript, HTML, CSS, Bulma, Express.js, and The Movie Database. It's currently being transitioned to a full-stack application",
+    'UI and UX prototyping and design, code and repository maintenance, client-side queue storage, and selectable user themes'
 );
 
 const typePlusPlus = new Project(
