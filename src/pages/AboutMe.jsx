@@ -235,6 +235,7 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                         </div>
                         {/* Link to resume with more proficiencies */}
                         <div>
+                            ...and{' '}
                             <Link
                                 to="/resume"
                                 onClick={() => setCurrentPage('resume')}
@@ -243,8 +244,8 @@ const AboutMe = ({ currentPage, setCurrentPage }) => {
                                     'text-theme-pink'
                                 }`}
                             >
-                                <span className="animated-underline pb-1">
-                                    ...and more!
+                                <span className="animated-underline pb-1 text-theme-pink">
+                                    more!
                                 </span>
                             </Link>
                         </div>

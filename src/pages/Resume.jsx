@@ -10,9 +10,7 @@ const Resume = ({ setCurrentPage }) => {
     return (
         <main className="grow flex flex-col justify-around items-center px-4 md:px-12 lg:px-32 lg:text-xl">
             <div className="mt-4 flex flex-col justify-around items-center text-theme-lilac">
-                <p className="mb-4 underline underline-offset-1 decoration- decoration-theme-pink">
-                    My proficiencies
-                </p>
+                <p className="mb-4 text-theme-pink">My proficiencies</p>
                 <div className="flex flex-wrap justify-center xl:w-2/3">
                     <img
                         src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
@@ -117,9 +115,7 @@ const Resume = ({ setCurrentPage }) => {
                 </div>
             </div>
             <div className="grow m-4 py-4 flex flex-col justify-around items-center text-theme-lilac xl:w-2/3">
-                <p className="mb-4 underline underline-offset-1 decoration- decoration-theme-pink">
-                    Resume
-                </p>
+                <p className="mb-4 text-theme-pink">Resume</p>
                 <iframe
                     src="./assets/CV.pdf#view=fitH#zoom=FitH"
                     title="Benjamin Holt's CV"
