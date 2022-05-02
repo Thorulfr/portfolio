@@ -5,7 +5,7 @@ function Project(project) {
     return (
         <div className="m-2 rounded-lg grow flex flex-col justify-around items-center xl:px-10 2xl:px-20">
             {/* Project name */}
-            <span className="text-xl text-center m-1 underline underline-offset-1 decoration- decoration-theme-pink lg:text-xl xl:text-2xl">
+            <span className="text-xl text-center m-1 text-theme-pink lg:text-xl xl:text-2xl">
                 {project.project.name}
             </span>
             {/* Project description */}

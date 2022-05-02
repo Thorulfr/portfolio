@@ -19,12 +19,14 @@ function Project(
 }
 
 const budgetTracker = new Project(
-    'Budget Tracker',
-    'PWA with offline functionality',
-    '',
+    'Track Your Travels',
+    'PWA budget-tracker',
+    'is a budget-tracking app designed with frequent travelers in mind. Users can add both expenses and income, giving them an instant overview of their finances at any given time. It functions both on- and offline (and can be locally installed), caching files so that users can still track their budget without a web connection',
     'https://github.com/Thorulfr/traveling-budget-tracker',
     'https://pure-refuge-57011.herokuapp.com/',
-    './assets/screenshots/budget-tracker-screenshot.png'
+    './assets/screenshots/budget-tracker-screenshot.png',
+    'JavaScript, HTML, CSS, Express.js, Node.js, MongoDB, Mongoose, and Heroku',
+    'everything minus an initial forked UI skeleton. This was a solo project that I planned, tested, wrote, designed, and implemented myself'
 );
 
 const numberOneFan = new Project(
@@ -39,12 +41,14 @@ const numberOneFan = new Project(
 );
 
 const socialNetworkAPI = new Project(
-    'Social Network API',
+    'Penny for Your Thoughts',
     'Back-end for a sample social network',
-    '',
+    'is a back-end framework and API for a hypothetical/sample social network. Given an appropriate front-end, this API provides methods for creating, updating, and deleting users, thoughts, and reactions to thoughts which are all stored in a MongoDB database. Users can also add and remove friends. Each time the server is started, all data/models are synced to the database',
     'https://github.com/Thorulfr/social-network-api',
     'https://www.youtube.com/watch?v=MOfmfsOLSZk',
-    './assets/screenshots/social-network-api-screenshot.png'
+    './assets/screenshots/social-network-api-screenshot.png',
+    'JavaScript, Node.js, MongoDB, Mongoose, Express, Insomnia, and Luxon',
+    'everything! This was a solo project that I planned, tested, wrote, designed, and implemented myself'
 );
 
 const streamability = new Project(
@@ -61,7 +65,7 @@ const streamability = new Project(
 const typePlusPlus = new Project(
     'Type++',
     'MERN-stack typing hub',
-    "is a competitive type-racing application that allows you to test your typing speed and compete both globally and with friends. As you play more and improve your speed and accuracy, you'll level up and earn badges to show off your skills",
+    "is a competitive type-racing single-page application (and PWA) that allows you to test your typing speed and compete both globally and with friends. As you play more and improve your speed and accuracy, you'll level up and earn badges to show off your skills",
     'https://github.com/Thorulfr/type-Plus-Plus',
     'https://typeplusplus.herokuapp.com/',
     './assets/screenshots/type-plus-plus-screenshot.png',
@@ -72,10 +76,12 @@ const typePlusPlus = new Project(
 const weatherDashboard = new Project(
     'Should I Go Outside?',
     'API-centric weather app',
-    '',
+    "is a weather application that goes one step further. Simply search for any location in the world – the app will give you the current and upcoming forecasts with a twist: It will also analyze the current weather and tell you if it's pleasant enough to go outside",
     'https://github.com/Thorulfr/weather-dashboard',
     'https://thorulfr.github.io/weather-dashboard/',
-    './assets/screenshots/weather-dashboard-screenshot.png'
+    './assets/screenshots/weather-dashboard-screenshot.png',
+    'JQuery, JavaScript, HTML, CSS, Bulma, and Luxon',
+    'everything! This was a solo project that I planned, wireframed, tested, wrote, designed, and implemented myself'
 );
 
 const projects = {
