@@ -72,7 +72,8 @@ function Footer() {
                     </svg>
                 </a>
             </div>
-            <div className="text-center m-3 text-theme-lilac">
+
+            <div className="text-center m-2 text-theme-lilac">
                 © 2022{' '}
                 <a
                     className="hover:text-theme-pink transition-all duration-300"
@@ -82,6 +83,13 @@ function Footer() {
                 >
                     Benjamin Holt
                 </a>
+            </div>
+            <div className="text-center text-xs pb-4 text-theme-lilac">
+                <p>
+                    This site works best on{' '}
+                    <span className="text-theme-pink">Chromium-based</span>{' '}
+                    browsers!
+                </p>
             </div>
         </footer>
     );
