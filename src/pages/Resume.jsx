@@ -152,6 +152,11 @@ const Resume = ({ setCurrentPage }) => {
                             className="p-1"
                         />
                         <img
+                            src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=E83F6F&color=342B6E"
+                            alt="Typescript badge"
+                            className="p-1"
+                        />
+                        <img
                             src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=E83F6F&color=342B6E"
                             alt="Webpack badge"
                             className="p-1"
