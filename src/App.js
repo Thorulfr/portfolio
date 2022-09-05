@@ -1,6 +1,6 @@
 // Imports
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Component imports
 import Nav from './components/Header';
