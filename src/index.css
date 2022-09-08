@@ -13,6 +13,21 @@ body {
     font-weight: bold;
 }
 
+body,
+button:disabled {
+    cursor: url('/public/assets/cursors/standard-cursor.svg'), auto;
+}
+
+body a,
+button {
+    cursor: url('/public/assets/cursors/pointer-cursor.svg'), auto;
+}
+
+input,
+textarea {
+    cursor: url('/public/assets/cursors/text-cursor.svg'), auto;
+}
+
 .animated-underline {
     position: relative;
 }
