@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Component imports
 import Nav from './components/Header';
 import Footer from './components/Footer';
+import ParticleHolder from './components/ParticleHolder';
 
 // Page imports
 import AboutMe from './pages/AboutMe';
@@ -63,6 +64,7 @@ function App() {
                         />
                     </Routes>
                 </div>
+                <ParticleHolder />
                 <Footer />
             </div>
         </Router>
