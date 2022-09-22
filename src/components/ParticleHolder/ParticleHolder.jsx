@@ -16,6 +16,7 @@ function ParticleHolder() {
     return (
         <Particles
             id="tsparticles"
+            className="-z-40"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
