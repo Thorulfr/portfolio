@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Header';
 import Footer from './components/Footer';
 import ParticleHolder from './components/ParticleHolder';
+import Background from './components/Background';
 
 // Page imports
 import AboutMe from './pages/AboutMe';
@@ -19,7 +20,9 @@ function App() {
     return (
         // <Router basename="/portfolio">
         <Router>
-            <div className="flex flex-col h-full bg-theme-purple bg-gradient-to-b from-theme-purple to-current sm:bg-gradient-to-br">
+            <Background />
+            {/* <div className="flex flex-col h-full bg-theme-purple bg-gradient-to-b from-theme-purple to-current sm:bg-gradient-to-br"> */}
+            <div className="flex flex-col h-full ">
                 <Nav
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
