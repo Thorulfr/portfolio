@@ -16,7 +16,8 @@ function ParticleHolder() {
     return (
         <Particles
             id="tsparticles"
-            className="-z-40 absolute right-0 bottom-0 h-1/2 w-[90%]"
+            className="-z-40 absolute right-0 bottom-0 h-2/3 w-[150%] overflow-clip "
+            canvasClassName="-rotate-[20deg] translate-y-[58%] translate-x-[18%]"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
@@ -25,10 +26,10 @@ function ParticleHolder() {
                 },
                 particles: {
                     number: {
-                        value: 160,
+                        value: 100,
                         density: {
                             enable: true,
-                            value_area: 800,
+                            value_area: 1200,
                         },
                     },
                     color: {
@@ -83,7 +84,7 @@ function ParticleHolder() {
                         },
                     },
                 },
-                interactivity: {
+                /* interactivity: {
                     detect_on: 'window',
                     events: {
                         onhover: {
@@ -121,7 +122,7 @@ function ParticleHolder() {
                             particles_nb: 2,
                         },
                     },
-                },
+                }, */
                 retina_detect: true,
             }}
         />
