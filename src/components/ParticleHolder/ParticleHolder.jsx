@@ -16,10 +16,13 @@ function ParticleHolder() {
     return (
         <Particles
             id="tsparticles"
-            className="-z-40"
+            className="-z-40 absolute right-0 bottom-0 h-1/2 w-[90%]"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                fullScreen: {
+                    enable: false,
+                },
                 particles: {
                     number: {
                         value: 160,

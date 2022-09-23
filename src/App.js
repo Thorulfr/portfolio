@@ -22,7 +22,7 @@ function App() {
         <Router>
             <Background />
             {/* <div className="flex flex-col h-full bg-theme-purple bg-gradient-to-b from-theme-purple to-current sm:bg-gradient-to-br"> */}
-            <div className="flex flex-col h-full ">
+            <div className="flex flex-col h-full relative">
                 <Nav
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
