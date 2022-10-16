@@ -15,17 +15,20 @@ body {
 
 body,
 button:disabled {
-    cursor: url('/public/assets/cursors/standard-cursor.svg'), auto;
+    /* cursor: url('/public/assets/cursors/standard-cursor.svg'), auto; */
+    @apply cursor-digital-standard;
 }
 
 body a,
 button {
-    cursor: url('/public/assets/cursors/pointer-cursor.svg'), auto;
+    /* cursor: url('/public/assets/cursors/pointer-cursor.svg'), auto; */
+    @apply cursor-digital-pointer;
 }
 
 input,
 textarea {
-    cursor: url('/public/assets/cursors/text-cursor.svg'), auto;
+    /* cursor: url('/public/assets/cursors/text-cursor.svg'), auto; */
+    @apply cursor-digital-text;
 }
 
 .animated-underline {
