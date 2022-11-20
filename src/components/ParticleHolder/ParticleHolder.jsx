@@ -5,31 +5,30 @@ import { loadFull } from 'tsparticles';
 
 function ParticleHolder() {
     const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
+        // console.log(engine);
         await loadFull(engine);
     }, []);
 
     const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
 
     return (
         <Particles
             id="tsparticles"
-            className="-z-40 absolute right-0 bottom-0 h-2/3 w-[150%] overflow-clip "
-            canvasClassName="-rotate-[20deg] translate-y-[58%] translate-x-[18%]"
+            className="-z-40 absolute"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 fullScreen: {
-                    enable: false,
+                    enable: true,
                 },
                 particles: {
                     number: {
-                        value: 100,
+                        value: 50,
                         density: {
                             enable: true,
-                            value_area: 1200,
+                            value_area: 900,
                         },
                     },
                     color: {
@@ -84,7 +83,7 @@ function ParticleHolder() {
                         },
                     },
                 },
-                /* interactivity: {
+                interactivity: {
                     detect_on: 'window',
                     events: {
                         onhover: {
@@ -122,7 +121,7 @@ function ParticleHolder() {
                             particles_nb: 2,
                         },
                     },
-                }, */
+                },
                 retina_detect: true,
             }}
         />
